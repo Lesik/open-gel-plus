@@ -13,7 +13,6 @@ public final class R {
         public static final int fade_out_fast=0x7f050001;
     }
     public static final class array {
-        public static final int wallpapers=0x7f070002;
         public static final int yo=0x7f070000;
         public static final int yo2=0x7f070001;
     }
@@ -594,7 +593,6 @@ containing a value of this type.
  We really want the page spacing to be the max of either the button bar
      height or the qsb bar height 
  Workspace 
- Workspace 
          */
         public static final int workspace_page_spacing=0x7f0c002b;
         public static final int workspace_spring_loaded_page_spacing=0x7f0c000d;
@@ -779,8 +777,6 @@ containing a value of this type.
         public static final int workspace_cling=0x7f100025;
     }
     public static final class integer {
-        /**  AppsCustomize 
-         */
         public static final int apps_customize_cling_focused_x=0x7f0a001e;
         public static final int apps_customize_cling_focused_y=0x7f0a001f;
         /**  AppsCustomize 
@@ -982,7 +978,6 @@ containing a value of this type.
         /**  Buttons in Rename folder dialog box 
          */
         public static final int cancel_action=0x7f0b001a;
-        public static final int chooser_wallpaper=0x7f0b006c;
         /**  The text on the button to dismiss a cling [CHAR_LIMIT=30] 
          */
         public static final int cling_dismiss=0x7f0b0059;
@@ -1068,7 +1063,6 @@ containing a value of this type.
         /**  The description of how to create a folder [CHAR_LIMIT=160] 
          */
         public static final int folder_cling_create_folder=0x7f0b0058;
-        public static final int folder_cling_move_item=0x7f0b0076;
         /**  The title text for the Folder cling [CHAR_LIMIT=60] 
          */
         public static final int folder_cling_title=0x7f0b0057;
@@ -1107,7 +1101,6 @@ containing a value of this type.
 s 
          */
         public static final int group_shortcuts=0x7f0b001d;
-        public static final int group_wallpapers=0x7f0b006d;
         /**  Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets 
          */
         public static final int group_widgets=0x7f0b001e;
@@ -1138,16 +1131,9 @@ s
          in the Phone UI. [CHAR LIMIT=32] 
          */
         public static final int market=0x7f0b0012;
-        public static final int menu_add=0x7f0b006e;
-        public static final int menu_help=0x7f0b0074;
         /**  Title of dialog box 
          */
         public static final int menu_item_add_item=0x7f0b001b;
-        public static final int menu_manage_apps=0x7f0b006f;
-        public static final int menu_notifications=0x7f0b0072;
-        public static final int menu_search=0x7f0b0071;
-        public static final int menu_settings=0x7f0b0073;
-        public static final int menu_wallpaper=0x7f0b0070;
         /**  Error message when user has filled a home screen 
          */
         public static final int out_of_space=0x7f0b0020;
@@ -1241,7 +1227,6 @@ s
          */
         public static final int widgets_tab_label=0x7f0b000e;
         public static final int workspace_cling_move_item=0x7f0b006b;
-        public static final int workspace_cling_open_all_apps=0x7f0b0075;
         /**  The description of how to use the workspace [CHAR_LIMIT=160] 
          */
         public static final int workspace_cling_removed_code=0x7f0b0052;
@@ -1282,7 +1267,6 @@ s
         public static final int SearchDropTargetBar=0x7f0e000e;
         public static final int TabIndicator=0x7f0e0012;
         /**  Overridden in values-land 
- AppsCustomize 
  AppsCustomize 
  AppsCustomize 
          */

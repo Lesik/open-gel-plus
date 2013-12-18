@@ -3,13 +3,11 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <header android:fragment="com.android.launcher3.settings.WorkspaceSettingsFragment"
-            android:icon="@drawable/ic_setting_icn"
-            android:title="Workspace"
-            android:summary="An example of some preferences." />
+            android:icon="@drawable/ic_launcher_market_holo"
+            android:title="Workspace" />
     
     <header android:fragment="com.android.launcher3.settings.DialogSettingsFragment"
-            android:icon="@drawable/ic_setting_icn"
-            android:title="App Drawer"
-            android:summary="An blaaaaaaaaaaa." />
+            android:icon="@drawable/all_apps_button_icon"
+            android:title="App Drawer" />
     
 </preference-headers>
