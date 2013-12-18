@@ -19,7 +19,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
    <!-- Global search icon -->
-   <com.android.launcher3.HolographicImageView
+   <!--com.android.launcher3.HolographicImageView
         style="@style/SearchButton"
         android:id="@+id/search_button"
         android:layout_width="match_parent"
@@ -31,10 +31,10 @@
         android:onClick="onClickSearchButton"
         android:focusable="true"
         android:clickable="true"
-        android:contentDescription="@string/accessibility_search_button" />
+        android:contentDescription="@string/accessibility_search_button" /-->
 
     <!-- Voice search icon -->
-    <com.android.launcher3.HolographicImageView
+    <!--com.android.launcher3.HolographicImageView
         style="@style/SearchButton"
         android:id="@+id/voice_button"
         android:layout_width="match_parent"
@@ -46,5 +46,5 @@
         android:onClick="onClickVoiceButton"
         android:focusable="true"
         android:clickable="true"
-        android:contentDescription="@string/accessibility_voice_search_button" />
+        android:contentDescription="@string/accessibility_voice_search_button" /-->
 </LinearLayout>

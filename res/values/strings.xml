@@ -22,6 +22,7 @@
     <skip />
     <!-- Application name -->
     <string name="application_name">Launcher3</string>
+    <string name="launcher_settings_title">Launcher Settings</string>
     <!-- Accessibility-facing application name -->
     <string name="home">Home</string>
     <!-- Name for all applications running as this uid. -->
@@ -231,9 +232,9 @@ s -->
 
     <!-- Clings -->
     <!-- The title text for the workspace cling [CHAR_LIMIT=60] -->
-    <string name="first_run_cling_title">Welcome!</string>
+    <string name="first_run_cling_title">Welcome to the new open source launcher.</string>
     <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
-    <string name="first_run_cling_description">Make yourself at home.</string>
+    <string name="first_run_cling_description">We hope you have a great time using it.</string>
     <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
     <string name="first_run_cling_custom_content_hint"></string>
     <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
@@ -241,9 +242,17 @@ s -->
     <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
     <string name="first_run_cling_create_screens_hint">Create more screens for apps and folders</string>
     <!-- The title text for the workspace cling [CHAR_LIMIT=60] -->
-    <string name="workspace_cling_title">Organize your space</string>
+    <string name="workspace_cling_title">Before we get started:</string>
     <!-- The description of how to use the workspace [CHAR_LIMIT=160] -->
-    <string name="workspace_cling_move_item">Touch &amp; hold background to manage wallpaper, widgets and settings.</string>
+    <string name="workspace_cling_removed_code">
+        To reduce the size of our launcher and improve your security, we\'ve removed unnecessary code and permissions.
+    </string>
+    <string name="workspace_cling_removed_wallpaperpicker">
+        Among other improvements we\'ve removed the wallpaper picker. Setting the wallpaper is possible in the Android system settings.
+    </string>
+    <string name="workspace_cling_tell_me_bugs">
+        Remember - no app is perfect. If you experience any issues with this launcher, don\'t hesitate to email me.
+    </string>
     <!-- The title text for the All Apps cling [CHAR_LIMIT=60] -->
     <string name="all_apps_cling_title">Choose some apps</string>
     <!-- The description of how to pick up and add an item to the workspace [CHAR_LIMIT=160] -->
@@ -293,5 +302,10 @@ s -->
     <!-- Text for wallpaper change button -->
     <string name="wallpaper_button_text">Wallpapers</string>
     <!-- Text for settings button -->
-    <string name="settings_button_text">Settings</string>
+    <string name="settings_button_text">Launcher Settings</string>
+    
+    
+    <!-- Unnecessary strings just so I get no warnings -->
+    <string name="inactive_page_indicator">Inactive PageIndicatorMarker</string>
+    <string name="active_page_indicator">Active PageIndicatorMarker</string>
 </resources>

@@ -16,25 +16,32 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import com.android.launcher3.R.color;
+import com.android.launcher3.settings.*;
+
 import android.appwidget.AppWidgetHostView;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Paint;
 import android.graphics.Paint.FontMetrics;
 import android.graphics.PointF;
 import android.graphics.Rect;
+import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import android.widget.Toast;
 
 
 class DeviceProfileQuery {
@@ -113,7 +120,7 @@ class DeviceProfile {
         numHotseatIcons = hs;
         hotseatIconSize = his;
     }
-
+    
     DeviceProfile(Context context,
                   ArrayList<DeviceProfile> profiles,
                   float minWidth, float minHeight,
@@ -167,14 +174,21 @@ class DeviceProfile {
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.numHotseatIcons));
         }
-        numHotseatIcons = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
+        //numHotseatIcons = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
+        numHotseatIcons = 5;
         // Interpolate the hotseat icon size
         points.clear();
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.hotseatIconSize));
         }
         // Hotseat
-        hotseatIconSize = invDistWeightedInterpolate(minWidth, minHeight, points);
+        //hotseatIconSize = invDistWeightedInterpolate(minWidth, minHeight, points);
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        if (sharedPrefs.getBoolean("checkbox_preference", true)) {
+        	
+        }
+        hotseatIconSize = sharedPrefs.getInt("workspace_dock_icon_size", 1);
+        Toast.makeText(context, Float.toString(hotseatIconSize), Toast.LENGTH_SHORT).show();
         hotseatIconSizePx = DynamicGrid.pxFromDp(hotseatIconSize, dm);
         hotseatAllAppsRank = (int) (numColumns / 2);
 

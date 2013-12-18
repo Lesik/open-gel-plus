@@ -15,7 +15,7 @@
 -->
 <com.android.launcher3.AppsCustomizeTabHost
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:background="#80FFFFFF">
     <LinearLayout
         android:id="@+id/apps_customize_content"
@@ -46,7 +46,8 @@
                 layout="@layout/market_button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="end" />
+                android:layout_gravity="end"
+                android:visibility="gone" />
         </FrameLayout>
         <FrameLayout
             android:id="@android:id/tabcontent"

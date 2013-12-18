@@ -15,7 +15,7 @@
 -->
 <com.android.launcher3.PageIndicatorMarker
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:layout_width="16dp"
     android:layout_height="16dp"
     android:layout_gravity="center_vertical">
@@ -25,6 +25,7 @@
         android:layout_height="match_parent"
         android:scaleType="centerInside"
         android:src="@drawable/ic_pageindicator_default"
+        android:contentDescription="@string/inactive_page_indicator"
         />
     <ImageView
         android:id="@+id/active"
@@ -35,5 +36,6 @@
         android:alpha="0"
         android:scaleX="0.5"
         android:scaleY="0.5"
+        android:contentDescription="@string/active_page_indicator"
         />
 </com.android.launcher3.PageIndicatorMarker>

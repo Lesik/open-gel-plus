@@ -98,6 +98,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.launcher3.DropTarget.DragObject;
+import com.android.launcher3.settings.SettingsActivity;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -978,6 +979,9 @@ public class Launcher extends Activity
     }
 
     protected void startSettings() {
+    	Intent SettingsIntent = new Intent();
+        SettingsIntent.setClass(this, SettingsActivity.class);
+        startActivity(SettingsIntent);
     }
 
     public interface QSBScroller {
@@ -2056,15 +2060,10 @@ public class Launcher extends Activity
     }
 
     protected void startWallpaper() {
-        final Intent pickWallpaper = new Intent(Intent.ACTION_SET_WALLPAPER);
-        pickWallpaper.setComponent(getWallpaperPickerComponent());
-        startActivityForResult(pickWallpaper, REQUEST_PICK_WALLPAPER);
+        Intent dialogIntent = new Intent(android.provider.Settings.ACTION_DISPLAY_SETTINGS);
+        dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(dialogIntent);
     }
-
-    protected ComponentName getWallpaperPickerComponent() {
-        return new ComponentName(getPackageName(), WallpaperPickerActivity.class.getName());
-    }
-
     /**
      * Registers various content observers. The current implementation registers
      * only a favorites observer to keep track of the favorites applications.
@@ -4323,7 +4322,7 @@ public class Launcher extends Activity
         }
     }
     public Cling showFirstRunFoldersCling() {
-        // Enable the clings only if they have not been dismissed before
+        /*// Enable the clings only if they have not been dismissed before
         if (isClingsEnabled() &&
                 !mSharedPrefs.getBoolean(Cling.FOLDER_CLING_DISMISSED_KEY, false)) {
             Cling cling = initCling(R.id.folder_cling, R.id.cling_scrim,
@@ -4332,7 +4331,8 @@ public class Launcher extends Activity
         } else {
             removeCling(R.id.folder_cling);
             return null;
-        }
+        }*/
+    	return null;
     }
     protected SharedPreferences getSharedPrefs() {
         return mSharedPrefs;

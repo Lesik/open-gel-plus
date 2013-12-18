@@ -20,7 +20,9 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.launcher3">
-
+    <uses-sdk android:minSdkVersion="19"
+             android:targetSdkVersion="19"
+             android:maxSdkVersion="19" />
     <permission
         android:name="com.android.launcher3.permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
@@ -55,11 +57,10 @@
         android:protectionLevel="signature"
         />
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--uses-permission android:name="android.permission.CALL_PHONE" /-->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
@@ -146,6 +147,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.android.launcher3.settings.SettingsActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:label="@string/launcher_settings_title"
+            android:icon="@mipmap/ic_launcher_application"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
         <service android:name="com.android.launcher3.MemoryTracker"
             android:enabled="@bool/debug_memory_enabled"
             >

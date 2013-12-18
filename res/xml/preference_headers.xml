@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="com.android.launcher3.settings.WorkspaceSettingsFragment"
+            android:icon="@drawable/ic_setting_icn"
+            android:title="Workspace"
+            android:summary="An example of some preferences." />
+    
+    <header android:fragment="com.android.launcher3.settings.DialogSettingsFragment"
+            android:icon="@drawable/ic_setting_icn"
+            android:title="App Drawer"
+            android:summary="An blaaaaaaaaaaa." />
+    
+</preference-headers>

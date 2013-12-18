@@ -148,22 +148,6 @@ public class Cling extends FrameLayout implements Insettable, View.OnClickListen
                     pos.top + Utilities.sIconTextureHeight);
             Utilities.scaleRectAboutCenter(mFocusedHotseatAppBounds,
                     (grid.hotseatIconSize / grid.iconSize));
-
-            // Set the title
-            TextView v = (TextView) findViewById(R.id.focused_hotseat_app_title);
-            if (v != null) {
-                v.setText(title);
-            }
-
-            // Set the description
-            v = (TextView) findViewById(R.id.focused_hotseat_app_description);
-            if (v != null) {
-                v.setText(description);
-            }
-
-            // Show the bubble
-            View bubble = findViewById(R.id.focused_hotseat_app_bubble);
-            bubble.setVisibility(View.VISIBLE);
         }
     }
 

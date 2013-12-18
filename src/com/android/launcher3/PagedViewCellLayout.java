@@ -77,7 +77,7 @@ public class PagedViewCellLayout extends ViewGroup implements Page {
     }
 
     public int getCellHeight() {
-        return mCellHeight;
+    	return mCellHeight;
     }
 
     @Override

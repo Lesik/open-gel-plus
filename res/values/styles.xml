@@ -18,6 +18,13 @@
 -->
 
 <resources>
+   	<style name="Theme.Preferences.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+	    <item name="android:colorBackground">#fff0f0f0</item>
+	    <item name="android:background">#fff0f0f0</item>
+	    <item name="android:divider">#ffe0e0e0</item>
+	    <item name="android:textColorPrimary">#ff555555</item>
+	    <item name="android:textColorSecondary">#ff808080</item>
+	</style>    
     <style name="Theme.WallpaperCropper" parent="@android:style/Theme.Holo">
         <item name="android:actionBarStyle">@style/WallpaperCropperActionBar</item>
         <item name="android:windowFullscreen">true</item>

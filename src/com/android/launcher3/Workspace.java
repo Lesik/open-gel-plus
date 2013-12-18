@@ -45,6 +45,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.IBinder;
 import android.os.Parcelable;
+import android.preference.PreferenceManager;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -333,7 +334,7 @@ public class Workspace extends SmoothPagedView
     public void setInsets(Rect insets) {
         mInsets.set(insets);
     }
-
+    
     // estimate the size of a widget with spans hSpan, vSpan. return MAX_VALUE for each
     // dimension if unsuccessful
     public int[] estimateItemSize(int hSpan, int vSpan,
@@ -397,6 +398,12 @@ public class Workspace extends SmoothPagedView
         mLauncher.onInteractionEnd();
     }
 
+    private void initSettings() {
+    	SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        sharedPrefs.getInt("workspace_dock_icon_size", 46);
+        
+    }
+    
     /**
      * Initializes various states for this workspace.
      */
@@ -1094,14 +1101,6 @@ public class Workspace extends SmoothPagedView
     protected CustomContentCallbacks getCustomContentCallbacks() {
         return mCustomContentCallbacks;
     }
-
-    protected void setWallpaperDimension() {
-        String spKey = WallpaperCropActivity.getSharedPreferencesKey();
-        SharedPreferences sp = mLauncher.getSharedPreferences(spKey, Context.MODE_PRIVATE);
-        WallpaperPickerActivity.suggestWallpaperDimension(mLauncher.getResources(),
-                sp, mLauncher.getWindowManager(), mWallpaperManager);
-    }
-
     protected void snapToPage(int whichPage, Runnable r) {
         if (mDelayedSnapToPageRunnable != null) {
             mDelayedSnapToPageRunnable.run();
@@ -3827,7 +3826,6 @@ public class Workspace extends SmoothPagedView
         // hardware layers on children are enabled on startup, but should be disabled until
         // needed
         updateChildrenLayersEnabled(false);
-        setWallpaperDimension();
     }
 
     /**

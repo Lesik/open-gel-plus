@@ -26,7 +26,7 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.SystemClock;
-import android.support.v4.widget.AutoScrollHelper;
+//import android.support.v4.widget.AutoScrollHelper;
 import android.text.InputType;
 import android.text.Selection;
 import android.text.Spannable;
@@ -121,7 +121,7 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
 
     private boolean mDestroyed;
 
-    private AutoScrollHelper mAutoScrollHelper;
+//    private AutoScrollHelper mAutoScrollHelper;
 
     private Runnable mDeferredAction;
     private boolean mDeferDropAfterUninstall;
@@ -194,7 +194,7 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
         mFolderName.setSelectAllOnFocus(true);
         mFolderName.setInputType(mFolderName.getInputType() |
                 InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_TEXT_FLAG_CAP_WORDS);
-        mAutoScrollHelper = new FolderAutoScrollHelper(mScrollView);
+//        mAutoScrollHelper = new FolderAutoScrollHelper(mScrollView);
     }
 
     private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
@@ -640,7 +640,7 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
         final MotionEvent translatedEv = MotionEvent.obtain(
                 downTime, downTime, MotionEvent.ACTION_MOVE, d.x, d.y, 0);
 
-        if (!mAutoScrollHelper.isEnabled()) {
+        /*if (!mAutoScrollHelper.isEnabled()) {
             mAutoScrollHelper.setEnabled(true);
         }
 
@@ -649,7 +649,7 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
 
         if (handled) {
             mReorderAlarm.cancelAlarm();
-        } else {
+        } else {*/
             mTargetCell = mContent.findNearestArea(
                     (int) r[0], (int) r[1] + scrollOffset, 1, 1, mTargetCell);
             if (isLayoutRtl()) {
@@ -666,7 +666,7 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
             } else {
                 mDragMode = DRAG_MODE_NONE;
             }
-        }
+//        }
     }
 
     // This is used to compute the visual center of the dragView. The idea is that
@@ -711,7 +711,7 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
 
     public void onDragExit(DragObject d) {
         // Exiting folder; stop the auto scroller.
-        mAutoScrollHelper.setEnabled(false);
+//        mAutoScrollHelper.setEnabled(false);
         // We only close the folder if this is a true drag exit, ie. not because
         // a drop has occurred above the folder.
         if (!d.dragComplete) {

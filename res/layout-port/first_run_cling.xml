@@ -15,7 +15,7 @@
 -->
 <com.android.launcher3.Cling
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     launcher:drawIdentifier="first_run_portrait">
@@ -51,45 +51,6 @@
                 android:textSize="16sp"
                 android:gravity="center" />
         </LinearLayout>
-        <TextView
-            style="@style/ClingHintText"
-            android:id="@+id/search_bar_hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="65dp"
-            android:gravity="center_horizontal"
-            android:maxWidth="160dp"
-            android:visibility="gone"
-            android:drawableTop="@drawable/cling_arrow_up"
-            android:drawablePadding="5dp"
-            android:text="@string/first_run_cling_search_bar_hint" />
-        <TextView
-            style="@style/ClingHintText"
-            android:id="@+id/custom_content_hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|start"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="100dp"
-            android:maxWidth="160dp"
-            android:visibility="gone"
-            android:drawableStart="@drawable/cling_arrow_start"
-            android:drawablePadding="10dp"
-            android:text="@string/first_run_cling_custom_content_hint" />
-        <TextView
-            style="@style/ClingHintText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="85dp"
-            android:maxWidth="180dp"
-            android:drawableEnd="@drawable/cling_arrow_end"
-            android:drawablePadding="5dp"
-            android:text="@string/first_run_cling_create_screens_hint" />
     </FrameLayout>
     <Button
         style="@style/ClingButton"
