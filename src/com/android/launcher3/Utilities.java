@@ -16,6 +16,8 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -37,8 +39,6 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 /**
  * Various utilities shared amongst the Launcher's classes.

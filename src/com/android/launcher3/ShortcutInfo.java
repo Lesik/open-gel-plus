@@ -16,17 +16,17 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+
 import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.PackageInfo;
 import android.graphics.Bitmap;
 import android.util.Log;
-
-import java.util.ArrayList;
 
 /**
  * Represents a launchable icon on the workspaces and in folders.

@@ -16,6 +16,8 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -29,8 +31,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class Hotseat extends FrameLayout {
     private static final String TAG = "Hotseat";

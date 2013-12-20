@@ -16,6 +16,11 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.AnimatorListenerAdapter;
@@ -55,10 +60,7 @@ import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
-import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
-import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.TextView;
@@ -66,11 +68,6 @@ import android.widget.TextView;
 import com.android.launcher3.FolderIcon.FolderRingAnimator;
 import com.android.launcher3.Launcher.CustomContentCallbacks;
 import com.android.launcher3.LauncherSettings.Favorites;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 
 /**
  * The workspace is a wide area with a wallpaper and a finite number of pages.

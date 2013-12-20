@@ -16,6 +16,8 @@
 
 package com.android.launcher3;
 
+import java.util.HashSet;
+
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -23,8 +25,6 @@ import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.view.View;
 import android.view.ViewTreeObserver;
-
-import java.util.HashSet;
 
 public class LauncherAnimUtils {
     static HashSet<Animator> sAnimators = new HashSet<Animator>();

@@ -16,13 +16,13 @@
 
 package com.android.launcher3;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+
 import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.util.Log;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 
 /**
  * Represents an item in the launcher.

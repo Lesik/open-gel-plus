@@ -16,6 +16,15 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.json.JSONObject;
+import org.json.JSONStringer;
+import org.json.JSONTokener;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -27,13 +36,6 @@ import android.graphics.BitmapFactory;
 import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
-import org.json.*;
 
 public class InstallShortcutReceiver extends BroadcastReceiver {
     private static final String TAG = "InstallShortcutReceiver";

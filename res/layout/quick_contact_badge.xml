@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:gravity="center">  
+    
+     <TextView android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Assign Contact From Email"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+         />
+    <QuickContactBadge 
+        android:id="@+id/email_badge" 
+        android:layout_width="45dp"  
+        android:layout_height="45dp" 
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/ic_launcher_home"/>
+   
+    <TextView android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Assign Contact From Phone"
+        android:gravity="center"
+         />
+    <QuickContactBadge 
+        android:id="@+id/contact_badge" 
+        android:layout_width="45dp" 
+        android:layout_height="45dp"
+        android:layout_marginBottom="25dp"
+        android:src="@mipmap/ic_launcher_home"/> 
+   
+    <Button 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/pick_contact" 
+        android:onClick="onPickContact" 
+        android:layout_marginBottom="10dp"
+        android:text="pick contact for badge"/>
+   
+       <TextView android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Assign Contact Uri"
+         android:gravity="center"
+         />      
+    <QuickContactBadge 
+        android:id="@+id/pick_badge" 
+        android:layout_width="45dp" 
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_launcher_home"/> 
+   
+</LinearLayout>

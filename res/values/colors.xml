@@ -21,6 +21,7 @@
     <!-- The color tints to apply to the text and drag view when hovering
          over the delete target or the info target -->
     <color name="delete_target_hover_tint">#DAFF0000</color>
+    <color name="delete_target_hover_tint2">#FFFFFFFF</color>
     <color name="info_target_hover_tint">#DA0099CC</color>
 
     <color name="bubble_dark_background">#20000000</color>

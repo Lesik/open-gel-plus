@@ -16,14 +16,14 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.TimeInterpolator;
 import android.view.View;
 import android.view.ViewPropertyAnimator;
-
-import java.util.ArrayList;
-import java.util.EnumSet;
 
 public class LauncherViewPropertyAnimator extends Animator implements AnimatorListener {
     enum Properties {

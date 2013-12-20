@@ -1,5 +1,13 @@
 package com.android.launcher3;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.lang.ref.SoftReference;
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
 import android.content.ContentValues;
@@ -24,14 +32,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.util.Log;
-
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 
 abstract class SoftReferenceThreadLocal<T> {
     private ThreadLocal<SoftReference<T>> mThreadLocal;

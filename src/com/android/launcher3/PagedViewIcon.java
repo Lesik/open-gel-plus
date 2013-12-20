@@ -20,7 +20,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Region;
-import android.graphics.Region.Op;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;

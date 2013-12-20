@@ -18,13 +18,17 @@ package com.android.launcher3;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.ActivityOptions;
-import android.content.Context;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.graphics.*;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -33,7 +37,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 
 public class Cling extends FrameLayout implements Insettable, View.OnClickListener,
         View.OnLongClickListener, View.OnTouchListener {

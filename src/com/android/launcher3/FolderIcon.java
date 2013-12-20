@@ -16,6 +16,8 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -40,11 +42,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.launcher3.R;
 import com.android.launcher3.DropTarget.DragObject;
 import com.android.launcher3.FolderInfo.FolderListener;
-
-import java.util.ArrayList;
 
 /**
  * An icon that can appear on in the workspace representing an {@link UserFolder}.

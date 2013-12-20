@@ -17,6 +17,21 @@
 
 package com.android.launcher3;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.animation.Animator;
@@ -45,7 +60,6 @@ import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.ContentObserver;
@@ -98,22 +112,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.launcher3.DropTarget.DragObject;
-import com.android.launcher3.settings.SettingsActivity;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileDescriptor;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import com.android.launcher3.settings.SettingsTabsActivity;
 
 /**
  * Default launcher application.
@@ -979,9 +978,14 @@ public class Launcher extends Activity
     }
 
     protected void startSettings() {
-    	Intent SettingsIntent = new Intent();
-        SettingsIntent.setClass(this, SettingsActivity.class);
-        startActivity(SettingsIntent);
+    	try {
+    		Intent SettingsIntent = new Intent();
+        	SettingsIntent.setClass(this, SettingsTabsActivity.class);
+    		startActivity(SettingsIntent);
+    	}
+    	catch (NoClassDefFoundError err) {
+    		Log.e("yo", err.toString());
+    	}
     }
 
     public interface QSBScroller {

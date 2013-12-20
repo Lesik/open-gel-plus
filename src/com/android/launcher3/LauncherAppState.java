@@ -16,17 +16,19 @@
 
 package com.android.launcher3;
 
+import java.lang.ref.WeakReference;
+
 import android.app.SearchManager;
-import android.content.*;
+import android.content.ComponentName;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.os.Handler;
-import android.provider.Settings;
 import android.util.Log;
-import android.view.Display;
-
-import java.lang.ref.WeakReference;
 
 public class LauncherAppState {
     private static final String TAG = "LauncherAppState";

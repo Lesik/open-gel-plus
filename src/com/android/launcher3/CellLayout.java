@@ -16,6 +16,13 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Stack;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
@@ -35,7 +42,6 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.NinePatchDrawable;
 import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -48,15 +54,7 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LayoutAnimationController;
 
-import com.android.launcher3.R;
 import com.android.launcher3.FolderIcon.FolderRingAnimator;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Stack;
 
 public class CellLayout extends ViewGroup {
     static final String TAG = "CellLayout";

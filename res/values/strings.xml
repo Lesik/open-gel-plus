@@ -20,6 +20,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
     <skip />
+    <!-- Author -->
+    <string name="app_author_name">Lesik Pidgornyy (Developer)</string>
     <!-- Application name -->
     <string name="application_name">Launcher3</string>
     <string name="launcher_settings_title">Launcher Settings</string>

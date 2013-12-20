@@ -16,6 +16,8 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
@@ -32,7 +34,6 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -52,8 +53,6 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Scroller;
-
-import java.util.ArrayList;
 
 interface Page {
     public int getPageChildCount();

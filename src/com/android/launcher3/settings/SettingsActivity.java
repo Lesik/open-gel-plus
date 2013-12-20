@@ -4,9 +4,7 @@ import java.util.List;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import android.util.Log;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.android.launcher3.R;
 
@@ -28,7 +26,10 @@ public class SettingsActivity extends PreferenceActivity {
     @Override
     public void onBuildHeaders(List<Header> target) {
     	setTheme(android.R.style.Theme_Holo_Dialog);
+    	
         loadHeadersFromResource(R.xml.preference_headers, target);
+        
+
     }
     
     protected boolean isValidFragment (String fragmentName) {

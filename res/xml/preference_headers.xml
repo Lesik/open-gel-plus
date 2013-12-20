@@ -3,11 +3,17 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <header android:fragment="com.android.launcher3.settings.WorkspaceSettingsFragment"
-            android:icon="@drawable/ic_launcher_market_holo"
+            android:icon="@mipmap/ic_launcher_home"
             android:title="Workspace" />
     
     <header android:fragment="com.android.launcher3.settings.DialogSettingsFragment"
-            android:icon="@drawable/all_apps_button_icon"
+            android:icon="@mipmap/ic_launcher_application"
             android:title="App Drawer" />
+    
+    <QuickContactBadge
+               android:id="@+id/quickbadge"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:scaleType="centerCrop" />
     
 </preference-headers>

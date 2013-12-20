@@ -1,7 +1,5 @@
 package com.android.launcher3.settings;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
@@ -14,6 +12,12 @@ import com.android.launcher3.R;
  * This fragment shows the preferences for the first header.
  */
 public class WorkspaceSettingsFragment extends PreferenceFragment {
+	
+	public static WorkspaceSettingsFragment newInstance() {
+	    WorkspaceSettingsFragment pageFragment = new WorkspaceSettingsFragment();
+	    return pageFragment;
+	}
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

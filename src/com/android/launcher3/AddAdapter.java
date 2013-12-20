@@ -16,6 +16,8 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -24,10 +26,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-
-import com.android.launcher3.R;
 
 /**
  * Adapter showing the types of items that can be added to a {@link Workspace}.

@@ -16,6 +16,10 @@
 
 package com.android.launcher3;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -27,10 +31,6 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map.Entry;
 
 /**
  * Cache of application icons.  Icons can be made from any thread.

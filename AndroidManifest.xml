@@ -20,7 +20,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.launcher3">
-    <uses-sdk android:minSdkVersion="18"
+    <uses-sdk android:minSdkVersion="19"
              android:targetSdkVersion="19"
              android:maxSdkVersion="19" />
     <permission
@@ -60,9 +60,6 @@
     <!--uses-permission android:name="android.permission.CALL_PHONE" /-->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
@@ -147,13 +144,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.android.launcher3.settings.SettingsActivity"
-            android:theme="@android:style/Theme.Holo"
+        <activity android:name="com.android.launcher3.settings.SettingsTabsActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
             android:label="@string/launcher_settings_title"
-            android:icon="@mipmap/ic_launcher_application"
+            android:icon="@drawable/ic_setting"
             >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+            	<action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.intent.category.DEFAULT"/>
                 <action android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>

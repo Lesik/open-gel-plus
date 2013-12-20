@@ -20,9 +20,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import com.android.launcher3.R.color;
-import com.android.launcher3.settings.*;
-
 import android.appwidget.AppWidgetHostView;
 import android.content.ComponentName;
 import android.content.Context;
@@ -35,7 +32,6 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -190,7 +186,8 @@ class DeviceProfile {
         hotseatIconSize = sharedPrefs.getInt("workspace_dock_icon_size", 1);
         Toast.makeText(context, Float.toString(hotseatIconSize), Toast.LENGTH_SHORT).show();
         hotseatIconSizePx = DynamicGrid.pxFromDp(hotseatIconSize, dm);
-        hotseatAllAppsRank = (int) (numColumns / 2);
+        
+        hotseatAllAppsRank = sharedPrefs.getInt("workspace_dock_position", 1);
 
         // Calculate other vars based on Configuration
         updateFromConfiguration(resources, wPx, hPx, awPx, ahPx);

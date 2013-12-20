@@ -16,6 +16,11 @@
 
 package com.android.launcher3;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.appwidget.AppWidgetHostView;
@@ -50,11 +55,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.launcher3.DropTarget.DragObject;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * A simple callback interface which also provides the results of the task.

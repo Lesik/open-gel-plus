@@ -16,13 +16,14 @@
 
 package com.android.launcher3;
 
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.MessageQueue;
 import android.util.Pair;
-import java.util.LinkedList;
-import java.util.ListIterator;
 
 /**
  * Queue of things to run on a looper thread.  Items posted with {@link #post} will not

@@ -13,9 +13,9 @@ public final class R {
         public static final int fade_out_fast=0x7f050001;
     }
     public static final class array {
-        public static final int wallpapers=0x7f070002;
-        public static final int yo=0x7f070000;
-        public static final int yo2=0x7f070001;
+        public static final int wallpapers=0x7f080002;
+        public static final int yo=0x7f080000;
+        public static final int yo2=0x7f080001;
     }
     public static final class attr {
         /**  The number of horizontal cells in the CellLayout 
@@ -26,7 +26,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cellCountX=0x7f010004;
+        public static final int cellCountX=0x7f01000f;
         /**  The number of vertical cells in the CellLayout 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -35,7 +35,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cellCountY=0x7f010005;
+        public static final int cellCountY=0x7f010010;
         /**  The height of a single cell 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -46,7 +46,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cellHeight=0x7f010007;
+        public static final int cellHeight=0x7f010012;
         /**  The width of a single cell 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -57,7 +57,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cellWidth=0x7f010006;
+        public static final int cellWidth=0x7f010011;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -65,7 +65,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int className=0x7f010020;
+        public static final int className=0x7f01002b;
         /**  The x index of the item to be focused in the cling 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -74,7 +74,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int clingFocusedX=0x7f01001e;
+        public static final int clingFocusedX=0x7f010029;
         /**  The y index of the item to be focused in the cling 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -83,7 +83,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int clingFocusedY=0x7f01001f;
+        public static final int clingFocusedY=0x7f01002a;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -91,7 +91,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int container=0x7f010022;
+        public static final int container=0x7f01002d;
         /**  The first screen the workspace should display. 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -100,7 +100,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int defaultScreen=0x7f010003;
+        public static final int defaultScreen=0x7f01000e;
         /**  Used to identify how to draw the cling bg 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -109,7 +109,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drawIdentifier=0x7f010001;
+        public static final int drawIdentifier=0x7f01000c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -119,11 +119,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int heightGap=0x7f010009;
+        public static final int heightGap=0x7f010014;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int icon=0x7f010028;
+        public static final int icon=0x7f010033;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -131,7 +131,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int key=0x7f01002b;
+        public static final int key=0x7f010036;
         /**  Max number of cells of applications horizontally 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -140,7 +140,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maxAppCellCountX=0x7f010018;
+        public static final int maxAppCellCountX=0x7f010023;
         /**  Max number of cells of applications vertically 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -149,7 +149,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maxAppCellCountY=0x7f010019;
+        public static final int maxAppCellCountY=0x7f010024;
         /**  The max gap size for each dimension 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -160,7 +160,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maxGap=0x7f01000a;
+        public static final int maxGap=0x7f010015;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -168,12 +168,12 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int packageName=0x7f010021;
+        public static final int packageName=0x7f01002c;
         /**  The page indicator for this workspace 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int pageIndicator=0x7f010017;
+        public static final int pageIndicator=0x7f010022;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -183,7 +183,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageLayoutHeightGap=0x7f010011;
+        public static final int pageLayoutHeightGap=0x7f01001c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -193,7 +193,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageLayoutPaddingBottom=0x7f010013;
+        public static final int pageLayoutPaddingBottom=0x7f01001e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -203,7 +203,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageLayoutPaddingLeft=0x7f010014;
+        public static final int pageLayoutPaddingLeft=0x7f01001f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -213,7 +213,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageLayoutPaddingRight=0x7f010015;
+        public static final int pageLayoutPaddingRight=0x7f010020;
         /**  The padding of the pages that are dynamically created per page 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -224,7 +224,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageLayoutPaddingTop=0x7f010012;
+        public static final int pageLayoutPaddingTop=0x7f01001d;
         /**  A spacing override for the icons within a page 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -235,7 +235,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageLayoutWidthGap=0x7f010010;
+        public static final int pageLayoutWidthGap=0x7f01001b;
         /**  The space between adjacent pages of the PagedView. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -246,7 +246,104 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pageSpacing=0x7f010016;
+        public static final int pageSpacing=0x7f010021;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerColor=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerPadding=0x7f010005;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsIndicatorColor=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsIndicatorHeight=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsScrollOffset=0x7f010007;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsShouldExpand=0x7f010009;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int pstsTabBackground=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTabPaddingLeftRight=0x7f010006;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTextAllCaps=0x7f01000a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineColor=0x7f010001;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineHeight=0x7f010004;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -254,7 +351,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int screen=0x7f010023;
+        public static final int screen=0x7f01002e;
         /**  The source view to generate and apply the drawable states to/from 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -263,7 +360,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int sourceImageViewId=0x7f01000e;
+        public static final int sourceImageViewId=0x7f010019;
         /**  The source view to delegate touch presses events to. 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -272,7 +369,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int sourceViewId=0x7f010000;
+        public static final int sourceViewId=0x7f01000b;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -280,7 +377,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spanX=0x7f010026;
+        public static final int spanX=0x7f010031;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -288,7 +385,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spanY=0x7f010027;
+        public static final int spanY=0x7f010032;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -296,7 +393,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int stateHotwordOn=0x7f01000f;
+        public static final int stateHotwordOn=0x7f01001a;
         /**  The color of the stroke outline 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -306,7 +403,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeColor=0x7f01000b;
+        public static final int strokeColor=0x7f010016;
         /**  The color of the text 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -316,7 +413,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeTextColor=0x7f01000c;
+        public static final int strokeTextColor=0x7f010017;
         /**  The width of the stroke 
          <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
@@ -325,11 +422,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeWidth=0x7f01000d;
+        public static final int strokeWidth=0x7f010018;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int title=0x7f010029;
+        public static final int title=0x7f010034;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -337,7 +434,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uri=0x7f01002a;
+        public static final int uri=0x7f010035;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -345,7 +442,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int value=0x7f01002c;
+        public static final int value=0x7f010037;
         /**  Vertical spacing between widgets 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -356,7 +453,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int widgetCellHeightGap=0x7f01001b;
+        public static final int widgetCellHeightGap=0x7f010026;
         /**  Horizontal spacing between widgets and wallpapers 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -367,7 +464,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int widgetCellWidthGap=0x7f01001a;
+        public static final int widgetCellWidthGap=0x7f010025;
         /**  Number of widgets horizontally 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -376,7 +473,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int widgetCountX=0x7f01001c;
+        public static final int widgetCountX=0x7f010027;
         /**  Number of widgets vertically 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -385,7 +482,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int widgetCountY=0x7f01001d;
+        public static final int widgetCountY=0x7f010028;
         /**  An override for the width and height gap to allow users to specify
              a specific size for the page using spacing instead of resolving the
              spacing from the width of the page 
@@ -398,7 +495,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int widthGap=0x7f010008;
+        public static final int widthGap=0x7f010013;
         /**  Used to identify how to draw the cling bg 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -407,11 +504,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowSize=0x7f010002;
+        public static final int windowSize=0x7f01000d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int workspace=0x7f01002d;
+        public static final int workspace=0x7f010038;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -419,7 +516,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int x=0x7f010024;
+        public static final int x=0x7f01002f;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -427,7 +524,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int y=0x7f010025;
+        public static final int y=0x7f010030;
     }
     public static final class bool {
         public static final int allow_rotation=0x7f090003;
@@ -462,21 +559,23 @@ containing a value of this type.
         public static final int is_tablet=0x7f090001;
     }
     public static final class color {
-        public static final int apps_customize_icon_text_color=0x7f080007;
-        public static final int appwidget_error_color=0x7f080003;
-        public static final int bubble_dark_background=0x7f080002;
+        public static final int apps_customize_icon_text_color=0x7f070009;
+        public static final int appwidget_error_color=0x7f070005;
+        public static final int background_tab_pressed=0x7f070000;
+        public static final int bubble_dark_background=0x7f070004;
         /**  The color tints to apply to the text and drag view when hovering
          over the delete target or the info target 
          */
-        public static final int delete_target_hover_tint=0x7f080000;
-        public static final int first_run_cling_circle_background_color=0x7f08000b;
-        public static final int folder_items_text_color=0x7f080009;
-        public static final int info_target_hover_tint=0x7f080001;
-        public static final int outline_color=0x7f08000a;
-        public static final int wallpaper_picker_translucent_gray=0x7f080008;
-        public static final int workspace_all_apps_and_delete_zone_text_color=0x7f080004;
-        public static final int workspace_all_apps_and_delete_zone_text_shadow_color=0x7f080005;
-        public static final int workspace_icon_text_color=0x7f080006;
+        public static final int delete_target_hover_tint=0x7f070001;
+        public static final int delete_target_hover_tint2=0x7f070002;
+        public static final int first_run_cling_circle_background_color=0x7f07000d;
+        public static final int folder_items_text_color=0x7f07000b;
+        public static final int info_target_hover_tint=0x7f070003;
+        public static final int outline_color=0x7f07000c;
+        public static final int wallpaper_picker_translucent_gray=0x7f07000a;
+        public static final int workspace_all_apps_and_delete_zone_text_color=0x7f070006;
+        public static final int workspace_all_apps_and_delete_zone_text_shadow_color=0x7f070007;
+        public static final int workspace_icon_text_color=0x7f070008;
     }
     public static final class dimen {
         public static final int app_icon_size=0x7f0c0017;
@@ -603,180 +702,206 @@ containing a value of this type.
         public static final int all_apps_button_icon=0x7f020000;
         public static final int apps_customize_bg=0x7f020001;
         public static final int arrow_dashed=0x7f020002;
-        public static final int bg_appwidget_error=0x7f020003;
-        public static final int bg_cling1=0x7f020004;
-        public static final int bg_cling2=0x7f020005;
-        public static final int bg_cling3=0x7f020006;
-        public static final int bg_cling4=0x7f020007;
-        public static final int bg_cling5=0x7f020008;
-        public static final int bg_cling_home=0x7f020009;
-        public static final int bg_cling_nakasi3=0x7f02000a;
-        public static final int cling=0x7f02000b;
-        public static final int cling_arrow_down=0x7f02000c;
-        public static final int cling_arrow_end=0x7f02000d;
-        public static final int cling_arrow_left=0x7f02000e;
-        public static final int cling_arrow_right=0x7f02000f;
-        public static final int cling_arrow_start=0x7f020010;
-        public static final int cling_arrow_up=0x7f020011;
-        public static final int cling_button=0x7f020012;
-        public static final int cling_button_bg=0x7f020013;
-        public static final int cling_button_pressed=0x7f020014;
-        public static final int custom_content_page=0x7f020015;
-        public static final int default_widget_preview_holo=0x7f020016;
-        public static final int focusable_view_bg=0x7f020017;
-        public static final int focused_bg=0x7f020018;
-        public static final int hand=0x7f020019;
-        public static final int home_press=0x7f02001a;
-        public static final int homescreen_blue_normal_holo=0x7f02001b;
-        public static final int homescreen_blue_strong_holo=0x7f02001c;
-        public static final int hotseat_bg_panel=0x7f02001d;
-        public static final int hotseat_scrubber_holo=0x7f02001e;
-        public static final int hotseat_track_holo=0x7f02001f;
-        public static final int ic_actionbar_accept=0x7f020020;
-        public static final int ic_allapps=0x7f020021;
-        public static final int ic_allapps_pressed=0x7f020022;
-        public static final int ic_home_all_apps_holo_dark=0x7f020023;
-        public static final int ic_home_google_logo_normal_holo=0x7f020024;
-        public static final int ic_home_google_logo_pressed_holo=0x7f020025;
-        public static final int ic_home_search_normal_holo=0x7f020026;
-        public static final int ic_home_search_pressed_holo=0x7f020027;
-        public static final int ic_home_voice_search_holo=0x7f020028;
-        public static final int ic_home_voice_search_pressed_holo=0x7f020029;
-        public static final int ic_images=0x7f02002a;
-        public static final int ic_launcher_clear_active_holo=0x7f02002b;
-        public static final int ic_launcher_clear_normal_holo=0x7f02002c;
-        public static final int ic_launcher_info_active_holo=0x7f02002d;
-        public static final int ic_launcher_info_normal_holo=0x7f02002e;
-        public static final int ic_launcher_market_holo=0x7f02002f;
-        public static final int ic_launcher_trashcan_active_holo=0x7f020030;
-        public static final int ic_launcher_trashcan_normal_holo=0x7f020031;
-        public static final int ic_pageindicator_add=0x7f020032;
-        public static final int ic_pageindicator_current=0x7f020033;
-        public static final int ic_pageindicator_default=0x7f020034;
-        public static final int ic_qs_remote_display=0x7f020035;
-        public static final int ic_qs_remote_display_connected=0x7f020036;
-        public static final int ic_setting=0x7f020037;
-        public static final int ic_setting_icn=0x7f020038;
-        public static final int ic_setting_pressed=0x7f020039;
-        public static final int ic_wallpaper=0x7f02003a;
-        public static final int ic_wallpaper_pressed=0x7f02003b;
-        public static final int ic_widget=0x7f02003c;
-        public static final int ic_widget_pressed=0x7f02003d;
-        public static final int info_target_selector=0x7f02003e;
-        public static final int overscroll_glow_left=0x7f02003f;
-        public static final int overscroll_glow_right=0x7f020040;
-        public static final int page_hover_left_holo=0x7f020041;
-        public static final int page_hover_right_holo=0x7f020042;
-        public static final int paged_view_indicator=0x7f020043;
-        public static final int portal_container_holo=0x7f020044;
-        public static final int portal_ring_inner_holo=0x7f020045;
-        public static final int portal_ring_inner_nolip_holo=0x7f020046;
-        public static final int portal_ring_outer_holo=0x7f020047;
-        public static final int portal_ring_rest=0x7f020048;
-        public static final int remove_target_selector=0x7f020049;
-        public static final int screenpanel=0x7f02004a;
-        public static final int screenpanel_hover=0x7f02004b;
-        public static final int search_bg_panel=0x7f02004c;
-        public static final int search_frame=0x7f02004d;
-        public static final int setting_button=0x7f02004e;
-        public static final int tab_selected_focused_holo=0x7f02004f;
-        public static final int tab_selected_holo=0x7f020050;
-        public static final int tab_selected_pressed_focused_holo=0x7f020051;
-        public static final int tab_selected_pressed_holo=0x7f020052;
-        public static final int tab_unselected_focused_holo=0x7f020053;
-        public static final int tab_unselected_holo=0x7f020054;
-        public static final int tab_unselected_pressed_focused_holo=0x7f020055;
-        public static final int tab_unselected_pressed_holo=0x7f020056;
-        public static final int tab_widget_indicator_selector=0x7f020057;
-        public static final int tile_picker_focused=0x7f020058;
-        public static final int tile_picker_pressed=0x7f020059;
-        public static final int tile_picker_selected=0x7f02005a;
-        public static final int tile_shadow_bottom=0x7f02005b;
-        public static final int tile_shadow_top=0x7f02005c;
-        public static final int uninstall_target_selector=0x7f02005d;
-        public static final int wallpaper_button=0x7f02005e;
-        public static final int wallpaper_tile_fg=0x7f02005f;
-        public static final int widget_button=0x7f020060;
-        public static final int widget_container_holo=0x7f020061;
-        public static final int widget_resize_frame_holo=0x7f020062;
-        public static final int widget_resize_handle_bottom=0x7f020063;
-        public static final int widget_resize_handle_left=0x7f020064;
-        public static final int widget_resize_handle_right=0x7f020065;
-        public static final int widget_resize_handle_top=0x7f020066;
-        public static final int widget_tile=0x7f020067;
-        public static final int workspace_bg=0x7f020068;
+        public static final int author_picture=0x7f020003;
+        public static final int background_tab=0x7f020004;
+        public static final int bg_appwidget_error=0x7f020005;
+        public static final int bg_cling1=0x7f020006;
+        public static final int bg_cling2=0x7f020007;
+        public static final int bg_cling3=0x7f020008;
+        public static final int bg_cling4=0x7f020009;
+        public static final int bg_cling5=0x7f02000a;
+        public static final int bg_cling_home=0x7f02000b;
+        public static final int bg_cling_nakasi3=0x7f02000c;
+        public static final int cling=0x7f02000d;
+        public static final int cling_arrow_down=0x7f02000e;
+        public static final int cling_arrow_end=0x7f02000f;
+        public static final int cling_arrow_left=0x7f020010;
+        public static final int cling_arrow_right=0x7f020011;
+        public static final int cling_arrow_start=0x7f020012;
+        public static final int cling_arrow_up=0x7f020013;
+        public static final int cling_button=0x7f020014;
+        public static final int cling_button_bg=0x7f020015;
+        public static final int cling_button_pressed=0x7f020016;
+        public static final int custom_content_page=0x7f020017;
+        public static final int default_widget_preview_holo=0x7f020018;
+        public static final int focusable_view_bg=0x7f020019;
+        public static final int focused_bg=0x7f02001a;
+        public static final int github=0x7f02001b;
+        public static final int hand=0x7f02001c;
+        public static final int home_press=0x7f02001d;
+        public static final int homescreen_blue_normal_holo=0x7f02001e;
+        public static final int homescreen_blue_strong_holo=0x7f02001f;
+        public static final int hotseat_bg_panel=0x7f020020;
+        public static final int hotseat_scrubber_holo=0x7f020021;
+        public static final int hotseat_track_holo=0x7f020022;
+        public static final int ic_actionbar_accept=0x7f020023;
+        public static final int ic_allapps=0x7f020024;
+        public static final int ic_allapps_pressed=0x7f020025;
+        public static final int ic_home_all_apps_holo_dark=0x7f020026;
+        public static final int ic_home_google_logo_normal_holo=0x7f020027;
+        public static final int ic_home_google_logo_pressed_holo=0x7f020028;
+        public static final int ic_home_search_normal_holo=0x7f020029;
+        public static final int ic_home_search_pressed_holo=0x7f02002a;
+        public static final int ic_home_voice_search_holo=0x7f02002b;
+        public static final int ic_home_voice_search_pressed_holo=0x7f02002c;
+        public static final int ic_images=0x7f02002d;
+        public static final int ic_launcher_clear_active_holo=0x7f02002e;
+        public static final int ic_launcher_clear_normal_holo=0x7f02002f;
+        public static final int ic_launcher_gmail=0x7f020030;
+        public static final int ic_launcher_gplus=0x7f020031;
+        public static final int ic_launcher_info_active_holo=0x7f020032;
+        public static final int ic_launcher_info_normal_holo=0x7f020033;
+        public static final int ic_launcher_market_holo=0x7f020034;
+        public static final int ic_launcher_trashcan_active_holo=0x7f020035;
+        public static final int ic_launcher_trashcan_normal_holo=0x7f020036;
+        public static final int ic_pageindicator_add=0x7f020037;
+        public static final int ic_pageindicator_current=0x7f020038;
+        public static final int ic_pageindicator_default=0x7f020039;
+        public static final int ic_qs_remote_display=0x7f02003a;
+        public static final int ic_qs_remote_display_connected=0x7f02003b;
+        public static final int ic_setting=0x7f02003c;
+        public static final int ic_setting_icn=0x7f02003d;
+        public static final int ic_setting_pressed=0x7f02003e;
+        public static final int ic_wallpaper=0x7f02003f;
+        public static final int ic_wallpaper_pressed=0x7f020040;
+        public static final int ic_widget=0x7f020041;
+        public static final int ic_widget_pressed=0x7f020042;
+        public static final int info_target_selector=0x7f020043;
+        public static final int overscroll_glow_left=0x7f020044;
+        public static final int overscroll_glow_right=0x7f020045;
+        public static final int page_hover_left_holo=0x7f020046;
+        public static final int page_hover_right_holo=0x7f020047;
+        public static final int paged_view_indicator=0x7f020048;
+        public static final int paypal_donate=0x7f020049;
+        public static final int portal_container_holo=0x7f02004a;
+        public static final int portal_ring_inner_holo=0x7f02004b;
+        public static final int portal_ring_inner_nolip_holo=0x7f02004c;
+        public static final int portal_ring_outer_holo=0x7f02004d;
+        public static final int portal_ring_rest=0x7f02004e;
+        public static final int remove_target_selector=0x7f02004f;
+        public static final int screenpanel=0x7f020050;
+        public static final int screenpanel_hover=0x7f020051;
+        public static final int search_bg_panel=0x7f020052;
+        public static final int search_frame=0x7f020053;
+        public static final int setting_button=0x7f020054;
+        public static final int tab_selected_focused_holo=0x7f020055;
+        public static final int tab_selected_holo=0x7f020056;
+        public static final int tab_selected_pressed_focused_holo=0x7f020057;
+        public static final int tab_selected_pressed_holo=0x7f020058;
+        public static final int tab_unselected_focused_holo=0x7f020059;
+        public static final int tab_unselected_holo=0x7f02005a;
+        public static final int tab_unselected_pressed_focused_holo=0x7f02005b;
+        public static final int tab_unselected_pressed_holo=0x7f02005c;
+        public static final int tab_widget_indicator_selector=0x7f02005d;
+        public static final int tile_picker_focused=0x7f02005e;
+        public static final int tile_picker_pressed=0x7f02005f;
+        public static final int tile_picker_selected=0x7f020060;
+        public static final int tile_shadow_bottom=0x7f020061;
+        public static final int tile_shadow_top=0x7f020062;
+        public static final int twitter_birdy=0x7f020063;
+        public static final int uninstall_target_selector=0x7f020064;
+        public static final int wallpaper_button=0x7f020065;
+        public static final int wallpaper_tile_fg=0x7f020066;
+        public static final int widget_button=0x7f020067;
+        public static final int widget_container_holo=0x7f020068;
+        public static final int widget_resize_frame_holo=0x7f020069;
+        public static final int widget_resize_handle_bottom=0x7f02006a;
+        public static final int widget_resize_handle_left=0x7f02006b;
+        public static final int widget_resize_handle_right=0x7f02006c;
+        public static final int widget_resize_handle_top=0x7f02006d;
+        public static final int widget_tile=0x7f02006e;
+        public static final int workspace_bg=0x7f02006f;
     }
     public static final class id {
-        public static final int active=0x7f10000f;
+        public static final int active=0x7f100019;
         public static final int all_apps_cling_add_item=0x7f100001;
         public static final int all_apps_cling_title=0x7f100000;
         public static final int animation_buffer=0x7f100009;
         public static final int application_icon=0x7f100003;
         public static final int apps_customize_content=0x7f100004;
-        public static final int apps_customize_pane=0x7f100027;
+        public static final int apps_customize_pane=0x7f100034;
         public static final int apps_customize_pane_content=0x7f100007;
         public static final int apps_customize_progress_bar=0x7f10000a;
-        public static final int bubble_content=0x7f100015;
+        public static final int author_badge=0x7f100011;
+        public static final int bubble_content=0x7f10001f;
         public static final int cling_dismiss=0x7f100002;
-        public static final int cling_scrim=0x7f100023;
-        public static final int content=0x7f100014;
-        public static final int cropView=0x7f10003a;
-        public static final int custom_content_hint=0x7f100017;
-        public static final int delete_target_text=0x7f100010;
-        public static final int drag_layer=0x7f10001e;
-        public static final int drag_target_bar=0x7f10002d;
-        public static final int first_run_cling=0x7f100024;
-        public static final int folder_cling=0x7f100026;
-        public static final int folder_cling_create_folder=0x7f100019;
-        public static final int folder_cling_title=0x7f100018;
-        public static final int folder_content=0x7f100038;
-        public static final int folder_icon_name=0x7f10001b;
-        public static final int folder_name=0x7f10002f;
-        public static final int hotseat=0x7f100020;
-        public static final int inactive=0x7f10000e;
-        public static final int info_target_text=0x7f100011;
-        public static final int label=0x7f10002e;
-        public static final int launcher=0x7f10001d;
-        public static final int layout=0x7f10001c;
-        public static final int live_wallpaper_list=0x7f100040;
-        public static final int loading=0x7f10003b;
+        public static final int cling_scrim=0x7f100030;
+        public static final int colors=0x7f100017;
+        public static final int contact_badge=0x7f10003c;
+        public static final int content=0x7f10001e;
+        public static final int cropView=0x7f10004b;
+        public static final int custom_content_hint=0x7f100021;
+        public static final int delete_target_text=0x7f10001a;
+        public static final int drag_layer=0x7f10002b;
+        public static final int drag_target_bar=0x7f10003a;
+        public static final int email_badge=0x7f10003b;
+        public static final int first_run_cling=0x7f100031;
+        public static final int folder_cling=0x7f100033;
+        public static final int folder_cling_create_folder=0x7f100023;
+        public static final int folder_cling_title=0x7f100022;
+        public static final int folder_content=0x7f100049;
+        public static final int folder_icon_name=0x7f100025;
+        public static final int folder_name=0x7f100040;
+        public static final int github_button=0x7f100016;
+        public static final int hotseat=0x7f10002d;
+        public static final int image=0x7f100026;
+        public static final int imageView1=0x7f10000e;
+        public static final int inactive=0x7f100018;
+        public static final int info_target_text=0x7f10001b;
+        public static final int item1=0x7f100058;
+        public static final int label=0x7f10003f;
+        public static final int launcher=0x7f10002a;
+        public static final int layout=0x7f100029;
+        public static final int live_wallpaper_list=0x7f100051;
+        public static final int loading=0x7f10004c;
         public static final int market_button=0x7f100006;
-        public static final int master_wallpaper_list=0x7f10003e;
-        public static final int menu_delete=0x7f100045;
-        public static final int overview_panel=0x7f100022;
+        public static final int master_wallpaper_list=0x7f10004f;
+        public static final int menu_delete=0x7f100057;
+        public static final int name=0x7f100014;
+        public static final int overview_panel=0x7f10002f;
         public static final int page_indicator=0x7f100008;
-        public static final int preview_background=0x7f10001a;
-        public static final int provider=0x7f100013;
-        public static final int provider_icon=0x7f100012;
-        public static final int qsb_bar=0x7f100021;
-        public static final int scroll_view=0x7f100037;
-        public static final int search_bar_hint=0x7f100016;
-        public static final int search_button=0x7f100030;
-        public static final int search_button_container=0x7f100031;
-        public static final int seekBarPrefBarContainer=0x7f100036;
-        public static final int seekBarPrefUnitsLeft=0x7f100035;
-        public static final int seekBarPrefUnitsRight=0x7f100033;
-        public static final int seekBarPrefValue=0x7f100034;
-        public static final int settings_button=0x7f10002c;
+        public static final int pager=0x7f100028;
+        public static final int photo=0x7f100012;
+        public static final int photo_text_bar=0x7f100013;
+        public static final int pick_badge=0x7f10003e;
+        public static final int pick_contact=0x7f10003d;
+        public static final int preview_background=0x7f100024;
+        public static final int provider=0x7f10001d;
+        public static final int provider_icon=0x7f10001c;
+        public static final int qsb_bar=0x7f10002e;
+        public static final int quickbadge=0x7f100056;
+        public static final int scroll_view=0x7f100048;
+        public static final int search_bar_hint=0x7f100020;
+        public static final int search_button=0x7f100041;
+        public static final int search_button_container=0x7f100042;
+        public static final int seekBarPrefBarContainer=0x7f100047;
+        public static final int seekBarPrefUnitsLeft=0x7f100046;
+        public static final int seekBarPrefUnitsRight=0x7f100044;
+        public static final int seekBarPrefValue=0x7f100045;
+        public static final int settings_button=0x7f100039;
+        public static final int tabs=0x7f100027;
         public static final int tabs_container=0x7f100005;
-        public static final int third_party_wallpaper_list=0x7f100041;
-        public static final int voice_button=0x7f100029;
-        public static final int voice_button_container=0x7f100032;
-        public static final int voice_button_proxy=0x7f100028;
-        public static final int wallpaper_button=0x7f10002a;
-        public static final int wallpaper_icon=0x7f100044;
-        public static final int wallpaper_image=0x7f100042;
-        public static final int wallpaper_item_label=0x7f100043;
-        public static final int wallpaper_list=0x7f10003f;
-        public static final int wallpaper_root=0x7f100039;
-        public static final int wallpaper_scroll_container=0x7f10003d;
-        public static final int wallpaper_strip=0x7f10003c;
-        public static final int widget_button=0x7f10002b;
+        public static final int textView1=0x7f10000f;
+        public static final int textView2=0x7f100010;
+        public static final int third_party_wallpaper_list=0x7f100052;
+        public static final int twitter_button=0x7f100015;
+        public static final int voice_button=0x7f100036;
+        public static final int voice_button_container=0x7f100043;
+        public static final int voice_button_proxy=0x7f100035;
+        public static final int wallpaper_button=0x7f100037;
+        public static final int wallpaper_icon=0x7f100055;
+        public static final int wallpaper_image=0x7f100053;
+        public static final int wallpaper_item_label=0x7f100054;
+        public static final int wallpaper_list=0x7f100050;
+        public static final int wallpaper_root=0x7f10004a;
+        public static final int wallpaper_scroll_container=0x7f10004e;
+        public static final int wallpaper_strip=0x7f10004d;
+        public static final int widget_button=0x7f100038;
         public static final int widget_dims=0x7f10000d;
         public static final int widget_name=0x7f10000c;
         public static final int widget_preview=0x7f10000b;
-        public static final int workspace=0x7f10001f;
-        public static final int workspace_cling=0x7f100025;
+        public static final int workspace=0x7f10002c;
+        public static final int workspace_cling=0x7f100032;
     }
     public static final class integer {
         /**  AppsCustomize 
@@ -870,41 +995,50 @@ containing a value of this type.
         public static final int apps_customize_progressbar=0x7f040007;
         public static final int apps_customize_widget=0x7f040008;
         public static final int appwidget_error=0x7f040009;
-        public static final int custom_content_page_indicator_marker=0x7f04000a;
-        public static final int custom_workspace_cling=0x7f04000b;
-        public static final int drop_target_bar=0x7f04000c;
-        public static final int external_widget_drop_list_item=0x7f04000d;
-        public static final int first_run_cling=0x7f04000e;
-        public static final int folder_cling=0x7f04000f;
-        public static final int folder_icon=0x7f040010;
-        public static final int hotseat=0x7f040011;
-        public static final int launcher=0x7f040012;
-        public static final int market_button=0x7f040013;
-        public static final int overview_panel=0x7f040014;
-        public static final int page_indicator=0x7f040015;
-        public static final int page_indicator_marker=0x7f040016;
-        public static final int qsb_bar=0x7f040017;
-        public static final int rename_folder=0x7f040018;
-        public static final int search_bar=0x7f040019;
-        public static final int seek_bar_preference=0x7f04001a;
-        public static final int tab_widget_indicator=0x7f04001b;
-        public static final int user_folder=0x7f04001c;
-        public static final int wallpaper_cropper=0x7f04001d;
-        public static final int wallpaper_picker=0x7f04001e;
-        public static final int wallpaper_picker_image_picker_item=0x7f04001f;
-        public static final int wallpaper_picker_item=0x7f040020;
-        public static final int wallpaper_picker_live_wallpaper_item=0x7f040021;
-        public static final int wallpaper_picker_third_party_item=0x7f040022;
-        public static final int workspace_cling=0x7f040023;
-        public static final int workspace_screen=0x7f040024;
+        public static final int author_card_fragment=0x7f04000a;
+        public static final int author_fragment=0x7f04000b;
+        public static final int custom_content_page_indicator_marker=0x7f04000c;
+        public static final int custom_workspace_cling=0x7f04000d;
+        public static final int drop_target_bar=0x7f04000e;
+        public static final int external_widget_drop_list_item=0x7f04000f;
+        public static final int first_run_cling=0x7f040010;
+        public static final int folder_cling=0x7f040011;
+        public static final int folder_icon=0x7f040012;
+        public static final int fragment_quick_contact=0x7f040013;
+        public static final int hotseat=0x7f040014;
+        public static final int launcher=0x7f040015;
+        public static final int market_button=0x7f040016;
+        public static final int overview_panel=0x7f040017;
+        public static final int page_indicator=0x7f040018;
+        public static final int page_indicator_marker=0x7f040019;
+        public static final int qsb_bar=0x7f04001a;
+        public static final int quick_contact_badge=0x7f04001b;
+        public static final int rename_folder=0x7f04001c;
+        public static final int search_bar=0x7f04001d;
+        public static final int seek_bar_preference=0x7f04001e;
+        public static final int settings_tab_activity=0x7f04001f;
+        public static final int tab_widget_indicator=0x7f040020;
+        public static final int user_folder=0x7f040021;
+        public static final int wallpaper_cropper=0x7f040022;
+        public static final int wallpaper_picker=0x7f040023;
+        public static final int wallpaper_picker_image_picker_item=0x7f040024;
+        public static final int wallpaper_picker_item=0x7f040025;
+        public static final int wallpaper_picker_live_wallpaper_item=0x7f040026;
+        public static final int wallpaper_picker_third_party_item=0x7f040027;
+        public static final int workspace_cling=0x7f040028;
+        public static final int workspace_screen=0x7f040029;
     }
     public static final class menu {
         public static final int cab_delete_wallpapers=0x7f0f0000;
+        public static final int settings_action_bar=0x7f0f0001;
     }
     public static final class mipmap {
         public static final int ic_launcher_application=0x7f030000;
         public static final int ic_launcher_home=0x7f030001;
-        public static final int ic_launcher_wallpaper=0x7f030002;
+        public static final int ic_launcher_mail=0x7f030002;
+        public static final int ic_launcher_phone=0x7f030003;
+        public static final int ic_launcher_plusone=0x7f030004;
+        public static final int ic_launcher_wallpaper=0x7f030005;
     }
     public static final class plurals {
         /**  Shown when wallpapers are selected in Wallpaper picker 
@@ -916,346 +1050,349 @@ containing a value of this type.
     public static final class string {
         /**  Accessibility: AllApps button 
          */
-        public static final int accessibility_all_apps_button=0x7f0b0031;
+        public static final int accessibility_all_apps_button=0x7f0b0032;
         /**  Accessibility: Delete button 
          */
-        public static final int accessibility_delete_button=0x7f0b0032;
+        public static final int accessibility_delete_button=0x7f0b0033;
         /**  Accessibility: Search button 
          */
-        public static final int accessibility_search_button=0x7f0b002f;
+        public static final int accessibility_search_button=0x7f0b0030;
         /**  Accessibility: Voice Search button 
          */
-        public static final int accessibility_voice_search_button=0x7f0b0030;
-        public static final int active_page_indicator=0x7f0b006a;
+        public static final int accessibility_voice_search_button=0x7f0b0031;
+        public static final int active_page_indicator=0x7f0b006b;
         /**  Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]
          */
-        public static final int activity_not_found=0x7f0b000d;
+        public static final int activity_not_found=0x7f0b000e;
         /**  All applications label 
          */
-        public static final int all_apps_button_label=0x7f0b0028;
+        public static final int all_apps_button_label=0x7f0b0029;
         /**  The description of how to pick up and add an item to the workspace [CHAR_LIMIT=160] 
          */
-        public static final int all_apps_cling_add_item=0x7f0b0056;
+        public static final int all_apps_cling_add_item=0x7f0b0057;
         /**  The title text for the All Apps cling [CHAR_LIMIT=60] 
          */
-        public static final int all_apps_cling_title=0x7f0b0055;
+        public static final int all_apps_cling_title=0x7f0b0056;
         /**  Label for button in all applications label to go back home (to the workspace / desktop)
          for accessibilty (spoken when the button gets focus). 
          */
-        public static final int all_apps_home_button_label=0x7f0b0029;
+        public static final int all_apps_home_button_label=0x7f0b002a;
         /**  Accessibility string used to announce that a wallpaper has been selected. 
          */
-        public static final int announce_selection=0x7f0b0008;
+        public static final int announce_selection=0x7f0b0009;
+        /**  Author 
+         */
+        public static final int app_author_name=0x7f0b0001;
         /**  Name of a subclass of com.android.launcher3.AppFilter used to
          filter the activities shown in the launcher. Can be empty. 
          */
         public static final int app_filter_class=0x7f0b0000;
         /**  Application name 
          */
-        public static final int application_name=0x7f0b0001;
+        public static final int application_name=0x7f0b0002;
         /**  The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] 
          */
-        public static final int apps_customize_apps_scroll_format=0x7f0b004a;
+        public static final int apps_customize_apps_scroll_format=0x7f0b004b;
         /**  The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] 
          */
-        public static final int apps_customize_widgets_scroll_format=0x7f0b004b;
+        public static final int apps_customize_widgets_scroll_format=0x7f0b004c;
         /**  Appears in the CAB when an app is selected in All Apps or Customize mode. [CHAR_LIMIT=50] 
          */
-        public static final int cab_app_selection_text=0x7f0b0037;
+        public static final int cab_app_selection_text=0x7f0b0038;
         /**  Appears in the CAB when a folder is selected in Customize mode. [CHAR_LIMIT=50] 
          */
-        public static final int cab_folder_selection_text=0x7f0b0039;
+        public static final int cab_folder_selection_text=0x7f0b003a;
         /**  Describes the button for getting details/info about currently selected application.
          Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] 
          */
-        public static final int cab_menu_app_info=0x7f0b0036;
+        public static final int cab_menu_app_info=0x7f0b0037;
         /**  Describes the button for uninstalling the currently selected application.
          Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] 
          */
-        public static final int cab_menu_delete_app=0x7f0b0035;
+        public static final int cab_menu_delete_app=0x7f0b0036;
         /**  Appears in the CAB when a shortcut is selected in Customize mode. [CHAR_LIMIT=50] 
          */
-        public static final int cab_shortcut_selection_text=0x7f0b003a;
+        public static final int cab_shortcut_selection_text=0x7f0b003b;
         /**  Appears in the CAB when a widget is selected in Customize mode. [CHAR_LIMIT=50] 
          */
-        public static final int cab_widget_selection_text=0x7f0b0038;
+        public static final int cab_widget_selection_text=0x7f0b0039;
         /**  Buttons in Rename folder dialog box 
          */
-        public static final int cancel_action=0x7f0b001a;
-        public static final int chooser_wallpaper=0x7f0b006c;
+        public static final int cancel_action=0x7f0b001b;
+        public static final int chooser_wallpaper=0x7f0b006d;
         /**  The text on the button to dismiss a cling [CHAR_LIMIT=30] 
          */
-        public static final int cling_dismiss=0x7f0b0059;
+        public static final int cling_dismiss=0x7f0b005a;
         /**  Error message when user has filled all their home screens 
          */
-        public static final int completely_out_of_space=0x7f0b001f;
+        public static final int completely_out_of_space=0x7f0b0020;
         /**  Title of activity for cropping wallpapers 
          */
-        public static final int crop_wallpaper=0x7f0b000c;
+        public static final int crop_wallpaper=0x7f0b000d;
         /**  Dummy string [CHAR_LIMIT=60] 
          */
-        public static final int custom_workspace_cling_description_1=0x7f0b0062;
+        public static final int custom_workspace_cling_description_1=0x7f0b0063;
         /**  Dummy string [CHAR_LIMIT=60] 
          */
-        public static final int custom_workspace_cling_description_2=0x7f0b0064;
+        public static final int custom_workspace_cling_description_2=0x7f0b0065;
         /**  Strings used in device overlays 
  Clings 
  Dummy string [CHAR_LIMIT=40] 
          */
-        public static final int custom_workspace_cling_title_1=0x7f0b0061;
+        public static final int custom_workspace_cling_title_1=0x7f0b0062;
         /**  Dummy string [CHAR_LIMIT=40] 
          */
-        public static final int custom_workspace_cling_title_2=0x7f0b0063;
+        public static final int custom_workspace_cling_title_2=0x7f0b0064;
         /**  Debug-only activity name. [DO NOT TRANSLATE] 
          */
-        public static final int debug_memory_activity=0x7f0b0065;
+        public static final int debug_memory_activity=0x7f0b0066;
         /**  The format string for default page scroll text [CHAR_LIMIT=none] 
          */
-        public static final int default_scroll_format=0x7f0b0048;
+        public static final int default_scroll_format=0x7f0b0049;
         /**  Label for delete drop target. [CHAR_LIMIT=30] 
          */
-        public static final int delete_target_label=0x7f0b002c;
+        public static final int delete_target_label=0x7f0b002d;
         /**  Label for uninstall drop target. [CHAR_LIMIT=30]
          */
-        public static final int delete_target_uninstall_label=0x7f0b002d;
+        public static final int delete_target_uninstall_label=0x7f0b002e;
         /**  Label for trash icon in All Apps. The icon/widget will become completely unavailable on the
          device. [CHAR_LIMIT=30]
          */
-        public static final int delete_zone_label_all_apps=0x7f0b002b;
+        public static final int delete_zone_label_all_apps=0x7f0b002c;
         /**  Label for trash icon in All Apps, when an updated system app is selected. The update will
          be uninstalled. [CHAR_LIMIT=30] 
          */
-        public static final int delete_zone_label_all_apps_system_app=0x7f0b0033;
+        public static final int delete_zone_label_all_apps_system_app=0x7f0b0034;
         /**  Label for trash icon on workspace. Meant to communicate the idea of removing the
          icon/widget from the home screen, but not permanently. [CHAR_LIMIT=30] 
          */
-        public static final int delete_zone_label_workspace=0x7f0b002a;
+        public static final int delete_zone_label_workspace=0x7f0b002b;
         /**  Title of the Android Dreams (screensaver) module 
          */
-        public static final int dream_name=0x7f0b0045;
+        public static final int dream_name=0x7f0b0046;
         /**  Error message on dummy custom cling layout [DO NOT TRANSLATE] 
          */
-        public static final int dummy_custom_cling_error_message=0x7f0b005a;
+        public static final int dummy_custom_cling_error_message=0x7f0b005b;
         /**  External-drop widget error string.  This is the error that is shown
          when you drag and item into the homescreen and it is unable to fit,
          or an error is encountered. [CHAR_LIMIT=50] 
          */
-        public static final int external_drop_widget_error=0x7f0b0015;
+        public static final int external_drop_widget_error=0x7f0b0016;
         /**  External-drop widget pick label format string [CHAR_LIMIT=25] 
          */
-        public static final int external_drop_widget_pick_format=0x7f0b0014;
+        public static final int external_drop_widget_pick_format=0x7f0b0015;
         /**  External-drop widget pick title.  This is shown as the title of the
          dialog which allows you to pick which widgets to handle a particular
          drop if there are multiple choices. [CHAR_LIMIT=35] 
          */
-        public static final int external_drop_widget_pick_title=0x7f0b0016;
+        public static final int external_drop_widget_pick_title=0x7f0b0017;
         /**  The description of how to use the workspace [CHAR_LIMIT=60] 
          */
-        public static final int first_run_cling_create_screens_hint=0x7f0b0050;
+        public static final int first_run_cling_create_screens_hint=0x7f0b0051;
         /**  The description of how to use the workspace [CHAR_LIMIT=60] 
          */
-        public static final int first_run_cling_custom_content_hint=0x7f0b004e;
+        public static final int first_run_cling_custom_content_hint=0x7f0b004f;
         /**  The description of how to use the workspace [CHAR_LIMIT=60] 
          */
-        public static final int first_run_cling_description=0x7f0b004d;
+        public static final int first_run_cling_description=0x7f0b004e;
         /**  The description of how to use the workspace [CHAR_LIMIT=60] 
          */
-        public static final int first_run_cling_search_bar_hint=0x7f0b004f;
+        public static final int first_run_cling_search_bar_hint=0x7f0b0050;
         /**  Clings 
  The title text for the workspace cling [CHAR_LIMIT=60] 
          */
-        public static final int first_run_cling_title=0x7f0b004c;
+        public static final int first_run_cling_title=0x7f0b004d;
         /**  The description of how to create a folder [CHAR_LIMIT=160] 
          */
-        public static final int folder_cling_create_folder=0x7f0b0058;
-        public static final int folder_cling_move_item=0x7f0b0076;
+        public static final int folder_cling_create_folder=0x7f0b0059;
+        public static final int folder_cling_move_item=0x7f0b0077;
         /**  The title text for the Folder cling [CHAR_LIMIT=60] 
          */
-        public static final int folder_cling_title=0x7f0b0057;
+        public static final int folder_cling_title=0x7f0b0058;
         /**  Indication that folder closed 
          */
-        public static final int folder_closed=0x7f0b005e;
+        public static final int folder_closed=0x7f0b005f;
         /**  Default folder title 
          */
-        public static final int folder_hint_text=0x7f0b0046;
+        public static final int folder_hint_text=0x7f0b0047;
         /**  Default folder name 
          */
-        public static final int folder_name=0x7f0b0005;
+        public static final int folder_name=0x7f0b0006;
         /**  Folder name format 
          */
-        public static final int folder_name_format=0x7f0b0060;
+        public static final int folder_name_format=0x7f0b0061;
         /**  Folder accessibility 
  The format string for when a folder is opened, speaks the dimensions 
          */
-        public static final int folder_opened=0x7f0b005b;
+        public static final int folder_opened=0x7f0b005c;
         /**  Folder renamed format 
          */
-        public static final int folder_renamed=0x7f0b005f;
+        public static final int folder_renamed=0x7f0b0060;
         /**  Instruction that clicking outside will close folder 
          */
-        public static final int folder_tap_to_close=0x7f0b005c;
+        public static final int folder_tap_to_close=0x7f0b005d;
         /**  Instruction that clicking outside will commit folder rename 
          */
-        public static final int folder_tap_to_rename=0x7f0b005d;
+        public static final int folder_tap_to_rename=0x7f0b005e;
         /**  Text to show user in place of a gadget when we can't display it properly 
          */
-        public static final int gadget_error_text=0x7f0b0043;
+        public static final int gadget_error_text=0x7f0b0044;
         /**  Options in "Add to Home" dialog box; Title of the group containing the list of all apps 
          */
-        public static final int group_applications=0x7f0b001c;
+        public static final int group_applications=0x7f0b001d;
         /**  Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
 s 
          */
-        public static final int group_shortcuts=0x7f0b001d;
-        public static final int group_wallpapers=0x7f0b006d;
+        public static final int group_shortcuts=0x7f0b001e;
+        public static final int group_wallpapers=0x7f0b006e;
         /**  Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets 
          */
-        public static final int group_widgets=0x7f0b001e;
+        public static final int group_widgets=0x7f0b001f;
         /**  URL pointing to help text. If empty, no link to help will be created [DO NOT TRANSLATE] 
          */
-        public static final int help_url=0x7f0b0034;
+        public static final int help_url=0x7f0b0035;
         /**  Accessibility-facing application name 
          */
-        public static final int home=0x7f0b0003;
+        public static final int home=0x7f0b0004;
         /**  Error message when user has filled the hotseat 
          */
-        public static final int hotseat_out_of_space=0x7f0b0021;
+        public static final int hotseat_out_of_space=0x7f0b0022;
         /**  Unnecessary strings just so I get no warnings 
          */
-        public static final int inactive_page_indicator=0x7f0b0069;
+        public static final int inactive_page_indicator=0x7f0b006a;
         /**  Label for the info icon. [CHAR_LIMIT=30] 
          */
-        public static final int info_target_label=0x7f0b002e;
+        public static final int info_target_label=0x7f0b002f;
         /**  Error message when user tries to drop an invalid item on the hotseat 
          */
-        public static final int invalid_hotseat_item=0x7f0b0022;
-        public static final int launcher_settings_title=0x7f0b0002;
+        public static final int invalid_hotseat_item=0x7f0b0023;
+        public static final int launcher_settings_title=0x7f0b0003;
         /**  AppsCustomize pane 
  Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] 
          */
-        public static final int long_press_widget_to_add=0x7f0b0011;
+        public static final int long_press_widget_to_add=0x7f0b0012;
         /**  Market button text.  The market button text is removed in Launcher.java 
          in the Phone UI. [CHAR LIMIT=32] 
          */
-        public static final int market=0x7f0b0012;
-        public static final int menu_add=0x7f0b006e;
-        public static final int menu_help=0x7f0b0074;
+        public static final int market=0x7f0b0013;
+        public static final int menu_add=0x7f0b006f;
+        public static final int menu_help=0x7f0b0075;
         /**  Title of dialog box 
          */
-        public static final int menu_item_add_item=0x7f0b001b;
-        public static final int menu_manage_apps=0x7f0b006f;
-        public static final int menu_notifications=0x7f0b0072;
-        public static final int menu_search=0x7f0b0071;
-        public static final int menu_settings=0x7f0b0073;
-        public static final int menu_wallpaper=0x7f0b0070;
+        public static final int menu_item_add_item=0x7f0b001c;
+        public static final int menu_manage_apps=0x7f0b0070;
+        public static final int menu_notifications=0x7f0b0073;
+        public static final int menu_search=0x7f0b0072;
+        public static final int menu_settings=0x7f0b0074;
+        public static final int menu_wallpaper=0x7f0b0071;
         /**  Error message when user has filled a home screen 
          */
-        public static final int out_of_space=0x7f0b0020;
+        public static final int out_of_space=0x7f0b0021;
         /**  Permission description 
          */
-        public static final int permdesc_install_shortcut=0x7f0b003c;
+        public static final int permdesc_install_shortcut=0x7f0b003d;
         /**  Permission description 
          */
-        public static final int permdesc_read_settings=0x7f0b0040;
+        public static final int permdesc_read_settings=0x7f0b0041;
         /**  Permission description 
          */
-        public static final int permdesc_uninstall_shortcut=0x7f0b003e;
+        public static final int permdesc_uninstall_shortcut=0x7f0b003f;
         /**  Permission description 
          */
-        public static final int permdesc_write_settings=0x7f0b0042;
+        public static final int permdesc_write_settings=0x7f0b0043;
         /**  Permission short label 
          */
-        public static final int permlab_install_shortcut=0x7f0b003b;
+        public static final int permlab_install_shortcut=0x7f0b003c;
         /**  Permission short label 
          */
-        public static final int permlab_read_settings=0x7f0b003f;
+        public static final int permlab_read_settings=0x7f0b0040;
         /**  Permission short label 
          */
-        public static final int permlab_uninstall_shortcut=0x7f0b003d;
+        public static final int permlab_uninstall_shortcut=0x7f0b003e;
         /**  Permission short label 
          */
-        public static final int permlab_write_settings=0x7f0b0041;
+        public static final int permlab_write_settings=0x7f0b0042;
         /**  Label on button in Wallpaper Picker to pick an image 
          */
-        public static final int pick_image=0x7f0b000a;
+        public static final int pick_image=0x7f0b000b;
         /**  Option in "Select wallpaper from" dialog box 
          */
-        public static final int pick_wallpaper=0x7f0b000b;
+        public static final int pick_wallpaper=0x7f0b000c;
         /**  Buttons in Rename folder dialog box 
          */
-        public static final int rename_action=0x7f0b0019;
+        public static final int rename_action=0x7f0b001a;
         /**  Label of Folder name field in Rename folder dialog box 
          */
-        public static final int rename_folder_label=0x7f0b0017;
+        public static final int rename_folder_label=0x7f0b0018;
         /**  Title of dialog box 
          */
-        public static final int rename_folder_title=0x7f0b0018;
+        public static final int rename_folder_title=0x7f0b0019;
         /**  Text for settings button 
          */
-        public static final int settings_button_text=0x7f0b0068;
+        public static final int settings_button_text=0x7f0b0069;
         /**  Message displayed when an external application attemps to create a shortcut that already exists 
          */
-        public static final int shortcut_duplicate=0x7f0b0025;
+        public static final int shortcut_duplicate=0x7f0b0026;
         /**  Message displayed when a shortcut is created by an external application 
          */
-        public static final int shortcut_installed=0x7f0b0023;
+        public static final int shortcut_installed=0x7f0b0024;
         /**  Message displayed when a shortcut is uninstalled by an external application 
          */
-        public static final int shortcut_uninstalled=0x7f0b0024;
+        public static final int shortcut_uninstalled=0x7f0b0025;
         /**  Title of dialog when user is selecting an application to add to homescreen 
          */
-        public static final int title_select_application=0x7f0b0027;
+        public static final int title_select_application=0x7f0b0028;
         /**  Title of dialog when user is selecting shortcut to add to homescreen 
          */
-        public static final int title_select_shortcut=0x7f0b0026;
-        public static final int toggle_weight_watcher=0x7f0b0010;
+        public static final int title_select_shortcut=0x7f0b0027;
+        public static final int toggle_weight_watcher=0x7f0b0011;
         /**  Name for all applications running as this uid. 
          */
-        public static final int uid_name=0x7f0b0004;
+        public static final int uid_name=0x7f0b0005;
         /**  Text to inform the user that they can't uninstall a system application 
          */
-        public static final int uninstall_system_app_text=0x7f0b0044;
+        public static final int uninstall_system_app_text=0x7f0b0045;
         /**  Accessibility string used as a label for a particular wallpaper in the Wallpaper Picker list.
          e.g. "Wallpaper 3 of 10" 
          */
-        public static final int wallpaper_accessibility_name=0x7f0b0007;
+        public static final int wallpaper_accessibility_name=0x7f0b0008;
         /**  Text for wallpaper change button 
          */
-        public static final int wallpaper_button_text=0x7f0b0067;
+        public static final int wallpaper_button_text=0x7f0b0068;
         /**  Label on button to delete wallpaper(s) 
          */
-        public static final int wallpaper_delete=0x7f0b0009;
+        public static final int wallpaper_delete=0x7f0b000a;
         /**  Button label on Wallpaper picker screen; user selects this button to set a specific wallpaper 
          */
-        public static final int wallpaper_instructions=0x7f0b0006;
-        public static final int widget_adder=0x7f0b000f;
+        public static final int wallpaper_instructions=0x7f0b0007;
+        public static final int widget_adder=0x7f0b0010;
         /**  Strings for the customization mode 
  Text for widget add button 
          */
-        public static final int widget_button_text=0x7f0b0066;
+        public static final int widget_button_text=0x7f0b0067;
         /**  The format string for the dimensions of a widget in the drawer 
  There is a special version of this format string for Farsi 
          */
-        public static final int widget_dims_format=0x7f0b0013;
+        public static final int widget_dims_format=0x7f0b0014;
         /**   Labels for the tabs in the customize drawer 
          */
-        public static final int widgets_tab_label=0x7f0b000e;
-        public static final int workspace_cling_move_item=0x7f0b006b;
-        public static final int workspace_cling_open_all_apps=0x7f0b0075;
+        public static final int widgets_tab_label=0x7f0b000f;
+        public static final int workspace_cling_move_item=0x7f0b006c;
+        public static final int workspace_cling_open_all_apps=0x7f0b0076;
         /**  The description of how to use the workspace [CHAR_LIMIT=160] 
          */
-        public static final int workspace_cling_removed_code=0x7f0b0052;
-        public static final int workspace_cling_removed_wallpaperpicker=0x7f0b0053;
-        public static final int workspace_cling_tell_me_bugs=0x7f0b0054;
+        public static final int workspace_cling_removed_code=0x7f0b0053;
+        public static final int workspace_cling_removed_wallpaperpicker=0x7f0b0054;
+        public static final int workspace_cling_tell_me_bugs=0x7f0b0055;
         /**  The title text for the workspace cling [CHAR_LIMIT=60] 
          */
-        public static final int workspace_cling_title=0x7f0b0051;
+        public static final int workspace_cling_title=0x7f0b0052;
         /**  The format string for Workspace descriptions [CHAR_LIMIT=none] 
          */
-        public static final int workspace_description_format=0x7f0b0047;
+        public static final int workspace_description_format=0x7f0b0048;
         /**  The format string for Workspace page scroll text [CHAR_LIMIT=none] 
          */
-        public static final int workspace_scroll_format=0x7f0b0049;
+        public static final int workspace_scroll_format=0x7f0b004a;
     }
     public static final class style {
         public static final int ClingAltTitleText=0x7f0e0006;
@@ -1287,7 +1424,8 @@ s
  AppsCustomize 
          */
         public static final int TabIndicator_AppsCustomize=0x7f0e0013;
-        /**  Workspace 
+        /**  Commented due to API 18 
+ Workspace 
          */
         public static final int Theme=0x7f0e0003;
         public static final int Theme_Preferences_Dialog=0x7f0e0000;
@@ -1331,8 +1469,8 @@ s
            @see #AppsCustomizePagedView_widgetCountY
          */
         public static final int[] AppsCustomizePagedView = {
-            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b,
-            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f
+            0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026,
+            0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a
         };
         /**
           <p>
@@ -1488,8 +1626,8 @@ containing a value of this type.
            @see #CellLayout_widthGap
          */
         public static final int[] CellLayout = {
-            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
-            0x7f01000a
+            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014,
+            0x7f010015
         };
         /**
           <p>
@@ -1593,7 +1731,7 @@ containing a value of this type.
            @see #Cling_drawIdentifier
          */
         public static final int[] Cling = {
-            0x7f010001
+            0x7f01000c
         };
         /**
           <p>
@@ -1633,7 +1771,7 @@ containing a value of this type.
            @see #DrawableStateProxyView_sourceViewId
          */
         public static final int[] DrawableStateProxyView = {
-            0x7f010000
+            0x7f01000b
         };
         /**
           <p>
@@ -1664,7 +1802,7 @@ containing a value of this type.
            @see #Extra_value
          */
         public static final int[] Extra = {
-            0x7f01002b, 0x7f01002c
+            0x7f010036, 0x7f010037
         };
         /**
           <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#key}
@@ -1725,9 +1863,9 @@ containing a value of this type.
            @see #Favorite_y
          */
         public static final int[] Favorite = {
-            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023,
-            0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027,
-            0x7f010028, 0x7f010029, 0x7f01002a
+            0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e,
+            0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032,
+            0x7f010033, 0x7f010034, 0x7f010035
         };
         /**
           <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#className}
@@ -1888,7 +2026,7 @@ containing a value of this type.
            @see #HolographicLinearLayout_stateHotwordOn
          */
         public static final int[] HolographicLinearLayout = {
-            0x7f01000e, 0x7f01000f
+            0x7f010019, 0x7f01001a
         };
         /**
           <p>
@@ -1934,7 +2072,7 @@ containing a value of this type.
            @see #Hotseat_cellCountY
          */
         public static final int[] Hotseat = {
-            0x7f010004, 0x7f010005
+            0x7f01000f, 0x7f010010
         };
         /**
           <p>
@@ -1979,7 +2117,7 @@ containing a value of this type.
            @see #Include_workspace
          */
         public static final int[] Include = {
-            0x7f01002d
+            0x7f010038
         };
         /**
           <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#workspace}
@@ -2003,7 +2141,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #PageIndicator_windowSize
          */
         public static final int[] PageIndicator = {
-            0x7f010002
+            0x7f01000d
         };
         /**
           <p>
@@ -2047,8 +2185,8 @@ containing a value of this type.
            @see #PagedView_pageSpacing
          */
         public static final int[] PagedView = {
-            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013,
-            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017
+            0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e,
+            0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022
         };
         /**
           <p>
@@ -2180,6 +2318,204 @@ containing a value of this type.
           @attr name com.android.launcher3:pageSpacing
         */
         public static final int PagedView_pageSpacing = 6;
+        /** Attributes that can be used with a PagerSlidingTabStrip.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerColor com.android.launcher3:pstsDividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerPadding com.android.launcher3:pstsDividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorColor com.android.launcher3:pstsIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorHeight com.android.launcher3:pstsIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsScrollOffset com.android.launcher3:pstsScrollOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsShouldExpand com.android.launcher3:pstsShouldExpand}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabBackground com.android.launcher3:pstsTabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabPaddingLeftRight com.android.launcher3:pstsTabPaddingLeftRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAllCaps com.android.launcher3:pstsTextAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineColor com.android.launcher3:pstsUnderlineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineHeight com.android.launcher3:pstsUnderlineHeight}</code></td><td></td></tr>
+           </table>
+           @see #PagerSlidingTabStrip_pstsDividerColor
+           @see #PagerSlidingTabStrip_pstsDividerPadding
+           @see #PagerSlidingTabStrip_pstsIndicatorColor
+           @see #PagerSlidingTabStrip_pstsIndicatorHeight
+           @see #PagerSlidingTabStrip_pstsScrollOffset
+           @see #PagerSlidingTabStrip_pstsShouldExpand
+           @see #PagerSlidingTabStrip_pstsTabBackground
+           @see #PagerSlidingTabStrip_pstsTabPaddingLeftRight
+           @see #PagerSlidingTabStrip_pstsTextAllCaps
+           @see #PagerSlidingTabStrip_pstsUnderlineColor
+           @see #PagerSlidingTabStrip_pstsUnderlineHeight
+         */
+        public static final int[] PagerSlidingTabStrip = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsDividerColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsDividerColor
+        */
+        public static final int PagerSlidingTabStrip_pstsDividerColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsDividerPadding}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsDividerPadding
+        */
+        public static final int PagerSlidingTabStrip_pstsDividerPadding = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsIndicatorColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsIndicatorColor
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsIndicatorHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsIndicatorHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorHeight = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsScrollOffset}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsScrollOffset
+        */
+        public static final int PagerSlidingTabStrip_pstsScrollOffset = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsShouldExpand}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsShouldExpand
+        */
+        public static final int PagerSlidingTabStrip_pstsShouldExpand = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsTabBackground}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.android.launcher3:pstsTabBackground
+        */
+        public static final int PagerSlidingTabStrip_pstsTabBackground = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsTabPaddingLeftRight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsTabPaddingLeftRight
+        */
+        public static final int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsTextAllCaps}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsTextAllCaps
+        */
+        public static final int PagerSlidingTabStrip_pstsTextAllCaps = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsUnderlineColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsUnderlineColor
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.android.launcher3.R.attr#pstsUnderlineHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.android.launcher3:pstsUnderlineHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineHeight = 4;
         /**  StrokedTextView specific attributes. 
            <p>Includes the following attributes:</p>
            <table>
@@ -2195,7 +2531,7 @@ containing a value of this type.
            @see #StrokedTextView_strokeWidth
          */
         public static final int[] StrokedTextView = {
-            0x7f01000b, 0x7f01000c, 0x7f01000d
+            0x7f010016, 0x7f010017, 0x7f010018
         };
         /**
           <p>
@@ -2263,7 +2599,7 @@ containing a value of this type.
            @see #Workspace_defaultScreen
          */
         public static final int[] Workspace = {
-            0x7f010003, 0x7f010004, 0x7f010005
+            0x7f01000e, 0x7f01000f, 0x7f010010
         };
         /**
           <p>

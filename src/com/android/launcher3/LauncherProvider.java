@@ -16,6 +16,14 @@
 
 package com.android.launcher3;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
 import android.app.SearchManager;
 import android.appwidget.AppWidgetHost;
 import android.appwidget.AppWidgetManager;
@@ -51,14 +59,6 @@ import android.util.Xml;
 
 import com.android.launcher3.LauncherSettings.Favorites;
 import com.android.launcher3.config.ProviderConfig;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class LauncherProvider extends ContentProvider {
     private static final String TAG = "Launcher.LauncherProvider";
