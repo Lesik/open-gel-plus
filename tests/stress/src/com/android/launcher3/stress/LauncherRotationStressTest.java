@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.launcher3.stress;
+package com.lesikapk.opengelplus.stress;
 
 
-import com.android.launcher3.Launcher;
+import com.lesikapk.opengelplus.Launcher;
 
 import android.content.pm.ActivityInfo;
 import android.os.SystemClock;

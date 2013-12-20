@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.PageIndicatorMarker
+<com.lesikapk.opengelplus.PageIndicatorMarker
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:layout_width="16dp"
@@ -38,4 +38,4 @@
         android:scaleY="0.5"
         android:contentDescription="@string/active_page_indicator"
         />
-</com.android.launcher3.PageIndicatorMarker>
+</com.lesikapk.opengelplus.PageIndicatorMarker>

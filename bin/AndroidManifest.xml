@@ -19,12 +19,12 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.launcher3">
+    package="com.lesikapk.opengelplus">
     <uses-sdk android:minSdkVersion="19"
              android:targetSdkVersion="19"
              android:maxSdkVersion="19" />
     <permission
-        android:name="com.android.launcher3.permission.PRELOAD_WORKSPACE"
+        android:name="com.lesikapk.opengelplus.permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="system|signature" />
     <permission
@@ -40,20 +40,20 @@
         android:label="@string/permlab_uninstall_shortcut"
         android:description="@string/permdesc_uninstall_shortcut"/>
     <permission
-        android:name="com.android.launcher3.permission.READ_SETTINGS"
+        android:name="com.lesikapk.opengelplus.permission.READ_SETTINGS"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="normal"
         android:label="@string/permlab_read_settings"
         android:description="@string/permdesc_read_settings"/>
     <permission
-        android:name="com.android.launcher3.permission.WRITE_SETTINGS"
+        android:name="com.lesikapk.opengelplus.permission.WRITE_SETTINGS"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="normal"
         android:label="@string/permlab_write_settings"
         android:description="@string/permdesc_write_settings"/>
 
     <permission
-        android:name="com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS"
+        android:name="com.lesikapk.opengelplus.permission.RECEIVE_LAUNCH_BROADCASTS"
         android:protectionLevel="signature"
         />
 
@@ -62,19 +62,19 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
-    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS" />
+    <uses-permission android:name="com.lesikapk.opengelplus.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lesikapk.opengelplus.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lesikapk.opengelplus.permission.RECEIVE_LAUNCH_BROADCASTS" />
 
     <application
-        android:name="com.android.launcher3.LauncherApplication"
+        android:name="com.lesikapk.opengelplus.LauncherApplication"
         android:label="@string/application_name"
         android:icon="@mipmap/ic_launcher_home"
         android:hardwareAccelerated="true"
         android:largeHeap="@bool/config_largeHeap"
         android:supportsRtl="true">
         <activity
-            android:name="com.android.launcher3.Launcher"
+            android:name="com.lesikapk.opengelplus.Launcher"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
             android:stateNotNeeded="true"
@@ -90,7 +90,7 @@
         </activity>
 
         <activity
-            android:name="com.android.launcher3.ToggleWeightWatcher"
+            android:name="com.lesikapk.opengelplus.ToggleWeightWatcher"
             android:label="@string/toggle_weight_watcher"
             android:enabled="@bool/debug_memory_enabled"
             android:icon="@mipmap/ic_launcher_home">
@@ -102,7 +102,7 @@
         </activity>
 
         <activity
-            android:name="com.android.launcher3.WallpaperPickerActivity"
+            android:name="com.lesikapk.opengelplus.WallpaperPickerActivity"
             android:theme="@style/Theme.WallpaperCropper"
             android:label="@string/pick_wallpaper"
             android:icon="@mipmap/ic_launcher_wallpaper"
@@ -115,7 +115,7 @@
         </activity>
 
         <activity
-            android:name="com.android.launcher3.WallpaperCropActivity"
+            android:name="com.lesikapk.opengelplus.WallpaperCropActivity"
             android:theme="@style/Theme.WallpaperCropper"
             android:label="@string/crop_wallpaper"
             android:icon="@mipmap/ic_launcher_wallpaper"
@@ -130,7 +130,7 @@
 
         <!-- Debugging tools -->
         <activity
-            android:name="com.android.launcher3.MemoryDumpActivity"
+            android:name="com.lesikapk.opengelplus.MemoryDumpActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="@string/debug_memory_activity"
             android:enabled="@bool/debug_memory_enabled"
@@ -144,60 +144,60 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.android.launcher3.settings.SettingsTabsActivity"
-            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        <activity android:name="com.lesikapk.opengelplus.settings.SettingsActivity"
+            android:theme="@android:style/Theme.Holo.Light"
             android:label="@string/launcher_settings_title"
             android:icon="@drawable/ic_setting"
             >
             <intent-filter>
             	<action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.category.DEFAULT"/>…
                 <action android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         
-        <service android:name="com.android.launcher3.MemoryTracker"
+        <service android:name="com.lesikapk.opengelplus.MemoryTracker"
             android:enabled="@bool/debug_memory_enabled"
             >
         </service>
 
         <!-- Intent received used to prepopulate the default workspace. -->
         <receiver
-            android:name="com.android.launcher3.PreloadReceiver"
-            android:permission="com.android.launcher3.permission.PRELOAD_WORKSPACE">
+            android:name="com.lesikapk.opengelplus.PreloadReceiver"
+            android:permission="com.lesikapk.opengelplus.permission.PRELOAD_WORKSPACE">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.PRELOAD_WORKSPACE" />
+                <action android:name="com.lesikapk.opengelplus.action.PRELOAD_WORKSPACE" />
             </intent-filter>
         </receiver>
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="com.android.launcher3.InstallShortcutReceiver"
-            android:permission="com.android.launcher3.permission.INSTALL_SHORTCUT">
+            android:name="com.lesikapk.opengelplus.InstallShortcutReceiver"
+            android:permission="com.lesikapk.opengelplus.permission.INSTALL_SHORTCUT">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.INSTALL_SHORTCUT" />
+                <action android:name="com.lesikapk.opengelplus.action.INSTALL_SHORTCUT" />
             </intent-filter>
         </receiver>
 
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
-            android:name="com.android.launcher3.UninstallShortcutReceiver"
-            android:permission="com.android.launcher3.permission.UNINSTALL_SHORTCUT">
+            android:name="com.lesikapk.opengelplus.UninstallShortcutReceiver"
+            android:permission="com.lesikapk.opengelplus.permission.UNINSTALL_SHORTCUT">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.UNINSTALL_SHORTCUT" />
+                <action android:name="com.lesikapk.opengelplus.action.UNINSTALL_SHORTCUT" />
             </intent-filter>
         </receiver>
 
         <!-- New user initialization; set up initial wallpaper -->
         <receiver
-            android:name="com.android.launcher3.UserInitializeReceiver"
+            android:name="com.lesikapk.opengelplus.UserInitializeReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.USER_INITIALIZE" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.android.launcher3.PackageChangedReceiver" >
+        <receiver android:name="com.lesikapk.opengelplus.PackageChangedReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_CHANGED"/>
                 <action android:name="android.intent.action.PACKAGE_REPLACED"/>
@@ -208,11 +208,11 @@
 
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
-            android:name="com.android.launcher3.LauncherProvider"
-            android:authorities="com.android.launcher3.settings"
+            android:name="com.lesikapk.opengelplus.LauncherProvider"
+            android:authorities="com.lesikapk.opengelplus.settings"
             android:exported="true"
-            android:writePermission="com.android.launcher3.permission.WRITE_SETTINGS"
-            android:readPermission="com.android.launcher3.permission.READ_SETTINGS" />
+            android:writePermission="com.lesikapk.opengelplus.permission.WRITE_SETTINGS"
+            android:readPermission="com.lesikapk.opengelplus.permission.READ_SETTINGS" />
 
         <meta-data android:name="android.nfc.disable_beam_default"
                        android:value="true" />

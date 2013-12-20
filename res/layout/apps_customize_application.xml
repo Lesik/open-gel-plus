@@ -14,9 +14,9 @@
      limitations under the License.
 -->
 
-<com.android.launcher3.PagedViewIcon
+<com.lesikapk.opengelplus.PagedViewIcon
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto/com.lesikapk.opengelplus"
 
     style="@style/WorkspaceIcon.AppsCustomize"
 
