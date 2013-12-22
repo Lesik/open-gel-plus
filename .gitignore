@@ -4,6 +4,7 @@ protos
 tests
 bin/
 .settings
+.settings/
 target
 local.properties
 proguard.cfg
