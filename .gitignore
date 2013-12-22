@@ -1,9 +1,0 @@
-bin
-gen
-protos
-tests
-bin/
-.settings
-target
-local.properties
-proguard.cfg
