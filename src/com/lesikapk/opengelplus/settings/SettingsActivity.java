@@ -192,7 +192,7 @@ public class SettingsActivity extends FragmentActivity {
 
 	public class MyPagerAdapter extends FragmentPagerAdapter {
 
-		private final String[] TITLES = { "Workspace", "App Drawer", "Author" };
+		private final String[] TITLES = { "Workspace", "App Drawer", "Other", "Author" };
 		
 		/*@Override
 		public float getPageWidth(int position) {
