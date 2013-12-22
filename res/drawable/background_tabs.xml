@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/tabs_pattern"
+    android:src="@drawable/tabs_pattern_dark"
     android:tileMode="repeat" />
+
+<!-- Use @drawable/tabs_pattern for light tabs
+	Use @drawable/tabs_pattern_dark for dark tabs -->

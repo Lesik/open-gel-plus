@@ -146,7 +146,7 @@
         </activity>
 
         <activity android:name="com.lesikapk.opengelplus.settings.SettingsActivity"
-            android:theme="@android:style/Theme.Holo.Light"
+            android:theme="@style/SettingsTheme"
             android:label="@string/launcher_settings_title"
             android:icon="@drawable/ic_setting"
             >

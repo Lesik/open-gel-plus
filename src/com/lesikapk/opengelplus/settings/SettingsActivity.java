@@ -46,7 +46,7 @@ public class SettingsActivity extends FragmentActivity {
 		SettingsActivity.mSelf = this;
 		// This hides the actionbar which contains the activity name and icon, but the tabs will be shown.
 		// It is important to leave this as-is and don't hide the actionbar in the manifest using Theme.Holo.NoActionBar, otherwise the app will crash.
-//		getActionBar().hide();
+		getActionBar().hide();
 		SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		currentColor = sharedPrefs.getInt("general_color", R.color.general_application_color);
 
