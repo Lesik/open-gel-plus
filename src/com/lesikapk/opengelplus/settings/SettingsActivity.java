@@ -8,6 +8,7 @@ package com.lesikapk.opengelplus.settings;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -16,6 +17,7 @@ import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -28,6 +30,7 @@ import com.lesikapk.opengelplus.R;
 public class SettingsActivity extends FragmentActivity {
 
 	private final Handler handler = new Handler();
+	protected static SettingsActivity mSelf;
 
 	private PagerSlidingTabStrip tabs;
 	private ViewPager pager;
@@ -40,6 +43,12 @@ public class SettingsActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings_tab_activity);
+		SettingsActivity.mSelf = this;
+		// This hides the actionbar which contains the activity name and icon, but the tabs will be shown.
+		// It is important to leave this as-is and don't hide the actionbar in the manifest using Theme.Holo.NoActionBar, otherwise the app will crash.
+//		getActionBar().hide();
+		SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+		currentColor = sharedPrefs.getInt("general_color", R.color.general_application_color);
 
 		tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
 		pager = (ViewPager) findViewById(R.id.pager);
@@ -52,10 +61,15 @@ public class SettingsActivity extends FragmentActivity {
 		pager.setPageMargin(pageMargin);
 
 		tabs.setViewPager(pager);
-
+		
 		changeColor(currentColor);
 	}
-	@Override
+	
+	public static SettingsActivity getThis() {
+    	return SettingsActivity.mSelf;
+    }
+    
+    @Override
 	public void onPause() {
 		super.onPause();
 		System.exit(1);
@@ -92,7 +106,7 @@ public class SettingsActivity extends FragmentActivity {
 		return super.onOptionsItemSelected(item);
 	}*/
 
-	private void changeColor(int newColor) {
+	public void changeColor(int newColor) {
 
 		tabs.setIndicatorColor(newColor);
 
@@ -103,6 +117,7 @@ public class SettingsActivity extends FragmentActivity {
 			Drawable bottomDrawable = getResources().getDrawable(R.drawable.background_tab);
 			LayerDrawable ld = new LayerDrawable(new Drawable[] { colorDrawable, bottomDrawable });
 
+			// This is actually unnecessary because the actionbar is hidden anyways, however I will leave this because of the transition.
 			if (oldBackground == null) {
 
 				if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1) {
@@ -141,10 +156,8 @@ public class SettingsActivity extends FragmentActivity {
 	}
 
 	public void onColorClicked(View v) {
-
 		int color = Color.parseColor(v.getTag().toString());
 		changeColor(color);
-
 	}
 
 	@Override

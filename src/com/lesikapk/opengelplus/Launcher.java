@@ -354,7 +354,7 @@ public class Launcher extends Activity
     }
 
     private Stats mStats;
-
+    
     private static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
     }
@@ -532,9 +532,9 @@ public class Launcher extends Activity
             updateVoiceSearchIcon(sVoiceSearchIcon[coi]);
             voiceVisible = true;
         }
-        if (!DISABLE_MARKET_BUTTON && sAppMarketIcon[coi] != null) {
-            updateAppMarketIcon(sAppMarketIcon[coi]);
-        }
+//        if (!DISABLE_MARKET_BUTTON && sAppMarketIcon[coi] != null) {
+//            updateAppMarketIcon(sAppMarketIcon[coi]);
+//        }
         if (mSearchDropTargetBar != null) {
             mSearchDropTargetBar.onSearchPackagesChanged(searchVisible, voiceVisible);
         }

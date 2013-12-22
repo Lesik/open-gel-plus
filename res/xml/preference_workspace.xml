@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
-	xmlns:android="http://schemas.android.com/apk/res/android">
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.lesikapk.opengelplus.settings" >
 
     <PreferenceCategory
 		android:title="This is a inline_preferences">
-
+	
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+		    android:key="general_color"
+		    android:title="Yo what a pickor!"
+		    android:summary="Pickor summeryzszsz"
+		    android:defaultValue="@color/general_application_color"
+		    alphaSlider="false"
+		/>
+        
 	<CheckBoxPreference
 		android:key="checkbox_preference"
 		android:title="This is a title_checkbox_preference"
@@ -62,30 +71,29 @@
             android:title="Dock">
 
         <SwitchPreference
-                android:key="dock_checkbox_preference"
-                android:title="Enable dock" />
-		
+			android:key="dock_checkbox_preference"
+			android:title="Enable dock" />
+
+
         <com.lesikapk.opengelplus.settings.SeekBarPreference
-			    xmlns:robobunny="http://robobunny.com"
-				android:key="workspace_dock_icon_size"
-				android:title="Icon size"
-				android:dependency="dock_checkbox_preference"
-                android:summary="Workspace dock icon size"
-				android:defaultValue="64"
-				android:max="64"
-				robobunny:min="32"
-				robobunny:unitsLeft="Icon size:"
-				robobunny:unitsRight="dp" />
+			xmlns:robobunny="http://robobunny.com"
+			android:key="workspace_dock_icon_size"
+			android:title="Icon size"
+			android:dependency="dock_checkbox_preference"
+			android:summary="Workspace dock icon size"
+			android:defaultValue="64"
+			android:max="64"
+			robobunny:min="32"
+			robobunny:unitsLeft="Icon size:"
+			robobunny:unitsRight="dp" />
 		    
         
         <!-- The visual style of a child is defined by this styled theme attribute. -->
         <CheckBoxPreference
-                android:key="child_checkbox_preference"
-                android:dependency="dock_checkbox_preference"
-                android:layout="?android:attr/preferenceLayoutChild"
-                android:title="This is a title_child_preference"
-                android:summary="This is a summary_child_preference" />
-
+			android:key="child_checkbox_preference"
+			android:dependency="dock_checkbox_preference"
+			android:layout="?android:attr/preferenceLayoutChild"
+			android:title="This is a title_child_preference"
+			android:summary="This is a summary_child_preference" />
     </PreferenceCategory>
-
 </PreferenceScreen>

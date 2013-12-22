@@ -18,6 +18,7 @@
 */
 -->
 <resources>
+    <color name="general_application_color">#FF666666</color>
     <!-- The color tints to apply to the text and drag view when hovering
          over the delete target or the info target -->
     <color name="delete_target_hover_tint">#DAFF0000</color>

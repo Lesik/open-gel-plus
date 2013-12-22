@@ -17,7 +17,10 @@
 -->
 
 <resources>
-
+    <declare-styleable name="NumberPickerPreferenceAttributes">
+		<attr name="customMinValue" format="integer" />
+		<attr name="customMaxValue" format="integer" />
+    </declare-styleable>
     <!-- DrawableStateProxyView specific attributes. These attributes are used to customize
          a DrawableStateProxyView view in XML files. -->
     <declare-styleable name="DrawableStateProxyView">
