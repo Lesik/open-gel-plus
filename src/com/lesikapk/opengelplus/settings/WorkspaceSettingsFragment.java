@@ -23,22 +23,14 @@ public class WorkspaceSettingsFragment extends PreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.preference_workspace);
-        if (getEnabled()) {
-        	Toast.makeText(getActivity(), "true!", Toast.LENGTH_SHORT).show();
-        }
-        if (!getEnabled()) {
-        	Toast.makeText(getActivity(), "false!", Toast.LENGTH_SHORT).show();
-        }
         Preference ckboxPref = this.findPreference("general_color");
         ckboxPref.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
     			SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
-    			int newColor = sharedPrefs.getInt("general_color", R.color.general_application_color);
-    			SettingsActivity objSettingsActivity = SettingsActivity.getThis();
-    			objSettingsActivity.changeColor(newColor);
-//    			Toast.makeText(getActivity(), Integer.toHexString(mycolor), Toast.LENGTH_SHORT).show();
+    			// getThis returns the current object of the SettingsActivity
+    			SettingsActivity.getThis().changeColor(sharedPrefs.getInt("general_color", R.color.general_application_color));
         		return true;
             }
         });
@@ -46,6 +38,7 @@ public class WorkspaceSettingsFragment extends PreferenceFragment {
     
     public boolean getEnabled() {
     	SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+    	Toast.makeText(getActivity(), sharedPrefs.getInt("workspace_dock_icon_count", -1), Toast.LENGTH_SHORT).show();
         if (sharedPrefs.getBoolean("checkbox_preference", true)) {
         	return true;
         }

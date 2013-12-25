@@ -6,6 +6,7 @@
 
 package com.lesikapk.opengelplus.settings;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.SharedPreferences;
@@ -21,6 +22,7 @@ import android.preference.PreferenceManager;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
@@ -72,16 +74,19 @@ public class SettingsActivity extends FragmentActivity {
     @Override
 	public void onPause() {
 		super.onPause();
+		Log.e("LOOOKATME11111111", "OMGSOMEONEPRESSEDONPAUSE");
 		System.exit(1);
 	}
 	@Override
 	public void onStop() {
 		super.onStop();
+		Log.e("LOOOKATME11111111", "OMGSOMEONEPRESSEDONSTOP");
 		System.exit(1);
 	}
     @Override
     public void onBackPressed() {
     	super.onBackPressed();
+    	Log.e("LOOOKATME11111111", "OMGSOMEONEPRESSEDONBACKPRESSED");
     	System.exit(1);
     }
 	//Not needed, used somewhere else.
@@ -225,7 +230,7 @@ public class SettingsActivity extends FragmentActivity {
 				case 0:
 					return WorkspaceSettingsFragment.newInstance();
 				case 1:
-					return AppDrawerSettingsFragment.newInstance();
+					return SettingsFragment.newInstance(R.xml.preference_author);
 				case 2:
 					return InfoFragment.newInstance();
 				default:

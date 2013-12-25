@@ -173,7 +173,7 @@ class DeviceProfile {
         }
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         //numHotseatIcons = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
-        numHotseatIcons = 5;
+        numHotseatIcons = Integer.parseInt(sharedPrefs.getString("workspace_hotseat_icons_count", "5"));
         // Interpolate the hotseat icon size
         points.clear();
         for (DeviceProfile p : profiles) {
@@ -181,14 +181,10 @@ class DeviceProfile {
         }
         // Hotseat
         //hotseatIconSize = invDistWeightedInterpolate(minWidth, minHeight, points);
-        if (sharedPrefs.getBoolean("checkbox_preference", true)) {
-        	
-        }
-        hotseatIconSize = sharedPrefs.getInt("workspace_dock_icon_size", 1);
-        Toast.makeText(context, Float.toString(hotseatIconSize), Toast.LENGTH_SHORT).show();
+        hotseatIconSize = sharedPrefs.getInt("workspace_hotseat_icon_size", 1);
         hotseatIconSizePx = DynamicGrid.pxFromDp(hotseatIconSize, dm);
         
-        hotseatAllAppsRank = sharedPrefs.getInt("workspace_dock_position", 1);
+        hotseatAllAppsRank = Integer.parseInt(sharedPrefs.getString("workspace_hotseat_all_apps_rank", "3"));
 
         // Calculate other vars based on Configuration
         updateFromConfiguration(resources, wPx, hPx, awPx, ahPx);

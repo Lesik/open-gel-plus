@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+        
+	<Preference
+	    android:layout="@layout/author_fragment"
+	    android:key="author_fragment">
+	</Preference>
+	<PreferenceScreen
+	       android:title="Fork me on Github!"
+	       android:summary="This is a summary_intent_preference">
+		<intent android:action="android.intent.action.VIEW"
+		        android:data="http://www.android.com" />
+	</PreferenceScreen>
+	
+	<PreferenceCategory
+            android:title="The developer would like to thank:">
+		<PreferenceScreen
+		     android:title="Fork me on Github!"
+		     android:summary="This is a summary_intent_preference">
+			<intent android:action="android.intent.action.VIEW"
+			        android:data="http://www.android.com" />
+		</PreferenceScreen>
+		<PreferenceScreen
+		     android:title="Fork me on Github!"
+		     android:summary="This is a summary_intent_preference">
+			<intent android:action="android.intent.action.VIEW"
+			        android:data="http://www.android.com" />
+		</PreferenceScreen>
+		<PreferenceScreen
+		     android:title="SeekBarPreference Library"
+		     android:summary="by Robobunny">
+			<intent android:action="android.intent.action.VIEW"
+			        android:data="http://robobunny.com/wp/2013/08/24/android-seekbar-preference-v2/" />
+		</PreferenceScreen>
+		<PreferenceScreen
+		     android:title="ColorPickerPreference Library"
+		     android:summary="by Sergey Margaritov (attenzione)">
+			<intent android:action="android.intent.action.VIEW"
+			        android:data="https://github.com/attenzione/android-ColorPickerPreference" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

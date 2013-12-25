@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.NumberPicker;
 
 public class NumberPickerPreference extends DialogPreference {
-	
-	private static final String androidns = "http://schemas.android.com/apk/res/com.lesikapk.opengelplus.settings";
-	private int customMinValue = 0;
-	private int customMaxValue = 0;
+        
+    private static final String androidns = "http://schemas.android.com/apk/res/com.lesikapk.opengelplus.settings";
+    private int customMinValue = 0;
+    private int customMaxValue = 0;
     private int Minute = 0;
     private NumberPicker np = null;
 
@@ -29,11 +29,11 @@ public class NumberPickerPreference extends DialogPreference {
             customMaxValue = getContext().getResources().getInteger(resId);
         }
         else {
-        	customMinValue = attrs.getAttributeIntValue(androidns, "dialogMessage", 0);
-        	customMaxValue = attrs.getAttributeIntValue(androidns, "dialogMessage", 10);
+                customMinValue = attrs.getAttributeIntValue(androidns, "dialogMessage", 0);
+                customMaxValue = attrs.getAttributeIntValue(androidns, "dialogMessage", 10);
         }
-        setPositiveButtonText("Set"); 
-        setNegativeButtonText("Cancel"); 
+        setPositiveButtonText("Set");
+        setNegativeButtonText("Cancel");
     }
 
     @Override
@@ -54,7 +54,7 @@ public class NumberPickerPreference extends DialogPreference {
     }
 
     @Override
-    protected void onDialogClosed(boolean positiveResult) {                                                             
+    protected void onDialogClosed(boolean positiveResult) {
         super.onDialogClosed(positiveResult);
 
         if (positiveResult) {

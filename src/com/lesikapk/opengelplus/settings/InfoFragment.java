@@ -1,25 +1,12 @@
 package com.lesikapk.opengelplus.settings;
 
 
-import android.app.Fragment;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
+import android.preference.PreferenceFragment;
 
 import com.lesikapk.opengelplus.R;
 
-/**
- * This fragment shows the preferences for the first header.
- */
-public class InfoFragment extends Fragment {
+public class InfoFragment extends PreferenceFragment {
 	
 	public static InfoFragment newInstance() {
 	    InfoFragment pageFragment = new InfoFragment();
@@ -28,10 +15,11 @@ public class InfoFragment extends Fragment {
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    	super.onCreate(savedInstanceState);
+    	addPreferencesFromResource(R.xml.preference_author);
     }
     
-    @Override
+    /*@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
     	View view = inflater.inflate(R.layout.author_fragment, container, false);
@@ -62,7 +50,7 @@ public class InfoFragment extends Fragment {
     	Bitmap authorPictureBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.author_picture);
     	authorPicture.setImageBitmap(authorPictureBitmap);
     	return view;
-    }
+    }*/
     /*private void showAuthorInfo() {
     	//NOT WORKING PROPERLY
         QuickContactFragment dialog = new QuickContactFragment();

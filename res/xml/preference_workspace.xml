@@ -11,13 +11,15 @@
 		    android:title="Yo what a pickor!"
 		    android:summary="Pickor summeryzszsz"
 		    android:defaultValue="@color/general_application_color"
-		    alphaSlider="false"
-		/>
-        
-	<CheckBoxPreference
-		android:key="checkbox_preference"
-		android:title="This is a title_checkbox_preference"
-		android:summary="This is a summary_checkbox_preference" />
+		    alphaSlider="false"	/>
+        <!-- Disabled because the ColorPickerPreference does not update the color preview. -->
+       	<!--Preference
+		    android:layout="@layout/predefined_color_chooser"
+		    android:key="loginButtons" /-->
+		<CheckBoxPreference
+			android:key="checkbox_preference"
+			android:title="This is a title_checkbox_preference"
+			android:summary="This is a summary_checkbox_preference" />
      
     </PreferenceCategory>
 
@@ -29,14 +31,6 @@
                 android:title="This is a title_edittext_preference"
                 android:summary="This is a summary_edittext_preference"
                 android:dialogTitle="This is a dialog_title_edittext_preference" />
-
-        <ListPreference
-                android:key="list_preference"
-                android:title="This is a title_list_preference"
-                android:summary="This is a summary_list_preference"
-                android:entries="@array/yo"
-                android:entryValues="@array/yo2"
-                android:dialogTitle="This is a dialog_title_list_preference" />
 
     </PreferenceCategory>
 
@@ -71,27 +65,51 @@
             android:title="Dock">
 
         <SwitchPreference
-			android:key="dock_checkbox_preference"
+			android:key="workspace_hotseat_enabled"
 			android:title="Enable dock" />
 
 
         <com.lesikapk.opengelplus.settings.SeekBarPreference
 			xmlns:robobunny="http://robobunny.com"
-			android:key="workspace_dock_icon_size"
+			android:key="workspace_hotseat_icon_size"
 			android:title="Icon size"
-			android:dependency="dock_checkbox_preference"
+			android:dependency="workspace_hotseat_enabled"
 			android:summary="Workspace dock icon size"
 			android:defaultValue="64"
 			android:max="64"
 			robobunny:min="32"
 			robobunny:unitsLeft="Icon size:"
 			robobunny:unitsRight="dp" />
-		    
+        
+        <!--com.lesikapk.opengelplus.settings.NumberPickerPreference
+            android:key="workspace_dock_icon_count"
+            android:title="Yo"
+            android:defaultValue="2" /-->
+        
+        <ListPreference
+			android:key="workspace_hotseat_icons_count"
+			android:title="Amount of hotseat icons"
+			android:summary="Too many icons might look bad on small screens"
+			android:dialogTitle="Amount of hotseat icons"
+			android:entries="@array/workspace_hotseat_icons_count_list"
+			android:dependency="workspace_hotseat_enabled"
+			android:layout="?android:attr/preferenceLayoutChild"
+			android:entryValues="@array/workspace_hotseat_icons_count_list_values" />
+        
+        <ListPreference
+			android:key="workspace_hotseat_all_apps_rank"
+			android:title="Position of the app drawer button"
+			android:summary="That's the screen where you see all your apps"
+			android:dialogTitle="App drawer position"
+			android:entries="@array/workspace_hotseat_all_apps_rank_list"
+			android:dependency="workspace_hotseat_enabled"
+			android:layout="?android:attr/preferenceLayoutChild"
+			android:entryValues="@array/workspace_hotseat_all_apps_rank_list_values" />
         
         <!-- The visual style of a child is defined by this styled theme attribute. -->
         <CheckBoxPreference
 			android:key="child_checkbox_preference"
-			android:dependency="dock_checkbox_preference"
+			android:dependency="workspace_hotseat_enabled"
 			android:layout="?android:attr/preferenceLayoutChild"
 			android:title="This is a title_child_preference"
 			android:summary="This is a summary_child_preference" />
