@@ -304,7 +304,7 @@ s -->
     <!-- Text for wallpaper change button -->
     <string name="wallpaper_button_text">Wallpapers</string>
     <!-- Text for settings button -->
-    <string name="settings_button_text">Launcher Settings</string>
+    <string name="settings_button_text">OpenGEL+ Settings</string>
     
     
     <!-- Unnecessary strings just so I get no warnings -->

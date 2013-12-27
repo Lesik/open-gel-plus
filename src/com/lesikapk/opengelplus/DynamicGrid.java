@@ -32,6 +32,7 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -39,6 +40,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 import com.lesikapk.opengelplus.R;
+import com.lesikapk.opengelplus.settings.GetSettings;
 
 
 class DeviceProfileQuery {
@@ -70,6 +72,8 @@ class DeviceProfile {
     boolean isTablet;
     boolean isLargeTablet;
     boolean transposeLayoutWithOrientation;
+    boolean shouldUseGeneratedAllApps;
+    boolean shouldUseGeneratedWorkspace;
 
     int desiredWorkspaceLeftRightMarginPx;
     int edgeMarginPx;
@@ -94,6 +98,8 @@ class DeviceProfile {
     int hotseatAllAppsRank;
     int allAppsNumRows;
     int allAppsNumCols;
+    int myAllAppsNumRows;
+    int myAllAppsNumCols;
     int searchBarSpaceWidthPx;
     int searchBarSpaceMaxWidthPx;
     int searchBarSpaceHeightPx;
@@ -124,6 +130,10 @@ class DeviceProfile {
                   int wPx, int hPx,
                   int awPx, int ahPx,
                   Resources resources) {
+    	
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        shouldUseGeneratedWorkspace = sharedPrefs.getBoolean("workspace_grid_useownvalues", true);
+        
         DisplayMetrics dm = resources.getDisplayMetrics();
         ArrayList<DeviceProfileQuery> points =
                 new ArrayList<DeviceProfileQuery>();
@@ -143,13 +153,19 @@ class DeviceProfile {
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.numRows));
         }
-        numRows = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
+        if (!shouldUseGeneratedWorkspace) {
+        	numRows = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
+	     	numColumns = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
+        }
+        else {
+        	numRows = sharedPrefs.getInt("workspace_grid_height", 5);
+	        numColumns = sharedPrefs.getInt("workspace_grid_width", 4);
+        }
         // Interpolate the columns
         points.clear();
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.numColumns));
         }
-        numColumns = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
         // Interpolate the icon size
         points.clear();
         for (DeviceProfile p : profiles) {
@@ -171,7 +187,6 @@ class DeviceProfile {
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.numHotseatIcons));
         }
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         //numHotseatIcons = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
         numHotseatIcons = Integer.parseInt(sharedPrefs.getString("workspace_hotseat_icons_count", "5"));
         // Interpolate the hotseat icon size
@@ -179,9 +194,16 @@ class DeviceProfile {
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.hotseatIconSize));
         }
+        
         // Hotseat
+        if (sharedPrefs.getBoolean("workspace_hotseat_enabled", true)) {
+            hotseatBarHeightPx = iconSizePx + 4 * edgeMarginPx;
+        }
+        else {
+        	hotseatBarHeightPx = 0;
+        }
         //hotseatIconSize = invDistWeightedInterpolate(minWidth, minHeight, points);
-        hotseatIconSize = sharedPrefs.getInt("workspace_hotseat_icon_size", 1);
+        hotseatIconSize = sharedPrefs.getInt("workspace_hotseat_icon_size", 48);
         hotseatIconSizePx = DynamicGrid.pxFromDp(hotseatIconSize, dm);
         
         hotseatAllAppsRank = Integer.parseInt(sharedPrefs.getString("workspace_hotseat_all_apps_rank", "3"));
@@ -219,7 +241,6 @@ class DeviceProfile {
         */
 
         // Hotseat
-        hotseatBarHeightPx = iconSizePx + 4 * edgeMarginPx;
         hotseatCellWidthPx = iconSizePx;
         hotseatCellHeightPx = iconSizePx;
 
@@ -228,11 +249,15 @@ class DeviceProfile {
         folderCellHeightPx = cellHeightPx + (int) ((3f/2f) * edgeMarginPx);
         folderBackgroundOffset = -edgeMarginPx;
         folderIconSizePx = iconSizePx + 2 * -folderBackgroundOffset;
+        
+        //App Drawer
+        myAllAppsNumRows = sharedPrefs.getInt("drawer_grid_height", 5);
+        myAllAppsNumCols = sharedPrefs.getInt("drawer_grid_width", 4);
+        shouldUseGeneratedAllApps = sharedPrefs.getBoolean("drawer_grid_useownvalues", true);
     }
 
-    void updateFromConfiguration(Resources resources, int wPx, int hPx,
-                                 int awPx, int ahPx) {
-        isLandscape = (resources.getConfiguration().orientation ==
+    void updateFromConfiguration(Resources resources, int wPx, int hPx, int awPx, int ahPx) {
+    	isLandscape = (resources.getConfiguration().orientation ==
                 Configuration.ORIENTATION_LANDSCAPE);
         isTablet = resources.getBoolean(R.bool.is_tablet);
         isLargeTablet = resources.getBoolean(R.bool.is_large_tablet);
@@ -248,11 +273,17 @@ class DeviceProfile {
         if (isLandscape) {
             allAppsNumRows = (availableHeightPx - pageIndicatorOffset - 4 * edgeMarginPx) /
                     (iconSizePx + iconTextSizePx + 2 * edgeMarginPx);
-        } else {
+        }
+        else {
             allAppsNumRows = (int) numRows + 1;
         }
         allAppsNumCols = (availableWidthPx - padding.left - padding.right - 2 * edgeMarginPx) /
                 (iconSizePx + 2 * edgeMarginPx);
+        
+        if (!shouldUseGeneratedAllApps) {
+    		allAppsNumCols = myAllAppsNumCols;
+    		allAppsNumRows = myAllAppsNumRows;
+    	}
     }
 
     private float dist(PointF p0, PointF p1) {

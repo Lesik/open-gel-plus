@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    
+    <PreferenceCategory
+            android:title="App Drawer"
+            android:summary="Change drawer settings">
+
+        <SwitchPreference
+			android:key="drawer_grid_useownvalues"
+			android:title="Enable own workspace grid"
+			android:defaultValue="true" />
+        
+        <com.lesikapk.opengelplus.settings.SeekBarPreference
+			xmlns:robobunny="http://robobunny.com"
+			android:key="drawer_grid_height"
+			android:title="Grid height"
+			android:summary="Dawer grid height"
+			android:dependency="drawer_grid_useownvalues"
+			android:defaultValue="5"
+			android:max="10"
+			robobunny:min="1"
+			robobunny:unitsLeft="Grid height:"
+			robobunny:unitsRight=" icons" />
+        
+        <com.lesikapk.opengelplus.settings.SeekBarPreference
+			xmlns:robobunny="http://robobunny.com"
+			android:key="drawer_grid_width"
+			android:title="Grid width"
+			android:summary="Drawer grid width"
+			android:dependency="drawer_grid_useownvalues"
+			android:defaultValue="4"
+			android:max="10"
+			robobunny:min="1"
+			robobunny:unitsLeft="Grid width:"
+			robobunny:unitsRight=" icons" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

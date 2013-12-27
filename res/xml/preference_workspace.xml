@@ -24,8 +24,38 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:title="This is a dialog_based_preferences">
+            android:title="Workspace"
+            android:summary="Change workspace settings">
 
+        <SwitchPreference
+			android:key="workspace_grid_useownvalues"
+			android:title="Enable own workspace grid"
+			android:defaultValue="true" />
+        
+        <com.lesikapk.opengelplus.settings.SeekBarPreference
+			xmlns:robobunny="http://robobunny.com"
+			android:key="workspace_grid_height"
+			android:title="Grid height"
+			android:summary="Workspace grid height"
+			android:dependency="workspace_grid_useownvalues"
+			android:defaultValue="5"
+			android:max="10"
+			robobunny:min="1"
+			robobunny:unitsLeft="Grid height:"
+			robobunny:unitsRight=" icons" />
+        
+        <com.lesikapk.opengelplus.settings.SeekBarPreference
+			xmlns:robobunny="http://robobunny.com"
+			android:key="workspace_grid_width"
+			android:title="Grid width"
+			android:summary="Workspace grid width"
+			android:dependency="workspace_grid_useownvalues"
+			android:defaultValue="4"
+			android:max="10"
+			robobunny:min="1"
+			robobunny:unitsLeft="Grid width:"
+			robobunny:unitsRight=" icons" />
+        
         <EditTextPreference
                 android:key="edittext_preference"
                 android:title="This is a title_edittext_preference"
@@ -66,7 +96,8 @@
 
         <SwitchPreference
 			android:key="workspace_hotseat_enabled"
-			android:title="Enable dock" />
+			android:title="Enable dock"
+			android:defaultValue="true" />
 
 
         <com.lesikapk.opengelplus.settings.SeekBarPreference
@@ -75,7 +106,7 @@
 			android:title="Icon size"
 			android:dependency="workspace_hotseat_enabled"
 			android:summary="Workspace dock icon size"
-			android:defaultValue="64"
+			android:defaultValue="48"
 			android:max="64"
 			robobunny:min="32"
 			robobunny:unitsLeft="Icon size:"
@@ -89,6 +120,7 @@
         <ListPreference
 			android:key="workspace_hotseat_icons_count"
 			android:title="Amount of hotseat icons"
+			android:defaultValue="5"
 			android:summary="Too many icons might look bad on small screens"
 			android:dialogTitle="Amount of hotseat icons"
 			android:entries="@array/workspace_hotseat_icons_count_list"
@@ -99,6 +131,7 @@
         <ListPreference
 			android:key="workspace_hotseat_all_apps_rank"
 			android:title="Position of the app drawer button"
+			android:defaultValue="3"
 			android:summary="That's the screen where you see all your apps"
 			android:dialogTitle="App drawer position"
 			android:entries="@array/workspace_hotseat_all_apps_rank_list"

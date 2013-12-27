@@ -6,7 +6,6 @@
 
 package com.lesikapk.opengelplus.settings;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.SharedPreferences;
@@ -230,7 +229,7 @@ public class SettingsActivity extends FragmentActivity {
 				case 0:
 					return WorkspaceSettingsFragment.newInstance();
 				case 1:
-					return SettingsFragment.newInstance(R.xml.preference_author);
+					return SettingsFragment.newInstance(R.xml.preference_app_drawer);
 				case 2:
 					return InfoFragment.newInstance();
 				default:
