@@ -24,7 +24,7 @@
     <string name="app_author_name">Lesik Pidgornyy (Developer)</string>
     <!-- Application name -->
     <string name="application_name">OpenGEL+</string>
-    <string name="launcher_settings_title">Launcher Settings</string>
+    <string name="launcher_settings_title">OpenGEL+ Settings</string>
     <!-- Accessibility-facing application name -->
     <string name="home">Home</string>
     <!-- Name for all applications running as this uid. -->
@@ -310,4 +310,15 @@ s -->
     <!-- Unnecessary strings just so I get no warnings -->
     <string name="inactive_page_indicator">Inactive PageIndicatorMarker</string>
     <string name="active_page_indicator">Active PageIndicatorMarker</string>
+    
+    
+    <!-- Settings -->
+    
+    <!-- Workspace -->
+    <string name="preferences_workspace_grid_title">Grid size</string>
+    <string name="preferences_workspace_grid_summary">Choose the number of rows/columns on the homescreen</string>
+    <string name="preferences_workspace_grid_rows_title">Rows</string>
+    <string name="preferences_workspace_grid_columns_title">Columns</string>
+    
+    
 </resources>

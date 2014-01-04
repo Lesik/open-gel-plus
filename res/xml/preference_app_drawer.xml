@@ -7,9 +7,9 @@
         <SwitchPreference
 			android:key="drawer_grid_useownvalues"
 			android:title="Enable own workspace grid"
-			android:defaultValue="true" />
+			android:defaultValue="false" />
         
-        <com.lesikapk.opengelplus.settings.SeekBarPreference
+        <com.lesikapk.opengelplus.preferences.SeekBarPreference
 			xmlns:robobunny="http://robobunny.com"
 			android:key="drawer_grid_height"
 			android:title="Grid height"
@@ -21,7 +21,7 @@
 			robobunny:unitsLeft="Grid height:"
 			robobunny:unitsRight=" icons" />
         
-        <com.lesikapk.opengelplus.settings.SeekBarPreference
+        <com.lesikapk.opengelplus.preferences.SeekBarPreference
 			xmlns:robobunny="http://robobunny.com"
 			android:key="drawer_grid_width"
 			android:title="Grid width"

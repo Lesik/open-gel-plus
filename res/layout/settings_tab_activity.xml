@@ -6,18 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <!--LinearLayout
         android:background="@drawable/background_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <!--ImageView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:contentDescription="Settings icon"
             android:background="@drawable/blurred_background"
-            android:src="@drawable/ic_setting" /-->
+            android:src="@drawable/ic_setting" />
             
 		<TextView
 		    android:layout_width="wrap_content"
@@ -39,8 +39,15 @@
             android:background="@drawable/background_tabs" >
         </com.astuetz.PagerSlidingTabStrip>
 
-    </LinearLayout>
-
+    </LinearLayout-->
+    
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/background_tabs" >
+    </com.astuetz.PagerSlidingTabStrip>
+    
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"

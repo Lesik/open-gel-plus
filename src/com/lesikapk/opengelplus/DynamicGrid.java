@@ -158,8 +158,16 @@ class DeviceProfile {
 	     	numColumns = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
         }
         else {
-        	numRows = sharedPrefs.getInt("workspace_grid_height", 5);
-	        numColumns = sharedPrefs.getInt("workspace_grid_width", 4);
+        	String[] values;
+        	try {
+                values = sharedPrefs.getString("workspace_grid", 4 + "|0").split("\\|");
+                numRows = Integer.parseInt(values[0]);
+                values = sharedPrefs.getString("workspace_grid", "0|" + 5).split("\\|");
+                numColumns = Integer.parseInt(values[1]);
+            }
+            catch (NumberFormatException e) {
+            	
+            }
         }
         // Interpolate the columns
         points.clear();
@@ -171,7 +179,8 @@ class DeviceProfile {
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.iconSize));
         }
-        iconSize = invDistWeightedInterpolate(minWidth, minHeight, points);
+        iconSize = 52;
+//        iconSize = invDistWeightedInterpolate(minWidth, minHeight, points);
         iconSizePx = DynamicGrid.pxFromDp(iconSize, dm);
 
         // Interpolate the icon text size
@@ -187,6 +196,7 @@ class DeviceProfile {
         for (DeviceProfile p : profiles) {
             points.add(new DeviceProfileQuery(p.minWidthDps, p.minHeightDps, p.numHotseatIcons));
         }
+        //Commented because the autodetect system is stupid - 5 icons are always best.
         //numHotseatIcons = Math.round(invDistWeightedInterpolate(minWidth, minHeight, points));
         numHotseatIcons = Integer.parseInt(sharedPrefs.getString("workspace_hotseat_icons_count", "5"));
         // Interpolate the hotseat icon size

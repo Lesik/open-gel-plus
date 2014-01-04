@@ -6,6 +6,7 @@
 
 package com.lesikapk.opengelplus.settings;
 
+import android.R.anim;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.SharedPreferences;
@@ -47,7 +48,8 @@ public class SettingsActivity extends FragmentActivity {
 		SettingsActivity.mSelf = this;
 		// This hides the actionbar which contains the activity name and icon, but the tabs will be shown.
 		// It is important to leave this as-is and don't hide the actionbar in the manifest using Theme.Holo.NoActionBar, otherwise the app will crash.
-		getActionBar().hide();
+		// But due to design improvements the actionbar is shown at the moment.
+		//getActionBar().hide();
 		SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		currentColor = sharedPrefs.getInt("general_color", R.color.general_application_color);
 
@@ -109,7 +111,11 @@ public class SettingsActivity extends FragmentActivity {
 
 		return super.onOptionsItemSelected(item);
 	}*/
-
+    
+    public void showAuthorInfo(View v) {
+        QuickContactFragment dialog = new QuickContactFragment();
+    	dialog.show(getFragmentManager(), "QuickContactFragment");
+    }
 	public void changeColor(int newColor) {
 
 		tabs.setIndicatorColor(newColor);
@@ -231,12 +237,10 @@ public class SettingsActivity extends FragmentActivity {
 				case 1:
 					return SettingsFragment.newInstance(R.xml.preference_app_drawer);
 				case 2:
-					return InfoFragment.newInstance();
+					return SettingsFragment.newInstance(R.xml.empty);
 				default:
 					return InfoFragment.newInstance();
 			}
 		}
-
 	}
-
 }

@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
         
-	<Preference
-	    android:layout="@layout/author_fragment"
-	    android:key="author_fragment">
-	</Preference>
-	<PreferenceScreen
-	       android:title="Fork me on Github!"
-	       android:summary="This is a summary_intent_preference">
-		<intent android:action="android.intent.action.VIEW"
-		        android:data="http://www.android.com" />
-	</PreferenceScreen>
-	
+	<PreferenceCategory
+            android:title="Author">
+		<Preference
+		    android:layout="@layout/author_fragment"
+		    android:key="author_fragment" />
+		<PreferenceScreen
+		       android:title="Fork me on Github!"
+		       android:summary="OpenGEL+ is completely open source and its code is available on Github">
+			<intent android:action="android.intent.action.VIEW"
+			        android:data="https://github.com/Lesik/open-gel-plus" />
+		</PreferenceScreen>
+	</PreferenceCategory>
 	<PreferenceCategory
             android:title="The developer would like to thank:">
 		<PreferenceScreen
-		     android:title="Fork me on Github!"
-		     android:summary="This is a summary_intent_preference">
+		     android:title="Launcher3"
+		     android:summary="by The Android Open Source Project">
 			<intent android:action="android.intent.action.VIEW"
-			        android:data="http://www.android.com" />
+			        android:data="https://android.googlesource.com/platform/packages/apps/Launcher3" />
 		</PreferenceScreen>
 		<PreferenceScreen
-		     android:title="Fork me on Github!"
-		     android:summary="This is a summary_intent_preference">
+		     android:title="Trebuchet"
+		     android:summary="by The CyanogenMod Project">
 			<intent android:action="android.intent.action.VIEW"
-			        android:data="http://www.android.com" />
+			        android:data="https://github.com/CyanogenMod/android_packages_apps_Trebuchet" />
 		</PreferenceScreen>
 		<PreferenceScreen
 		     android:title="SeekBarPreference Library"

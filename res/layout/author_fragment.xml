@@ -12,10 +12,11 @@
         android:id="@+id/author_badge"
         android:layout_width="wrap_content"
         android:layout_height="240dip"
-        android:layout_marginTop="5dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingTop="8dip" >
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="showAuthorInfo" >
 
         <ImageView
             android:id="@+id/photo"

@@ -1,4 +1,4 @@
-package com.lesikapk.opengelplus.settings;
+package com.lesikapk.opengelplus.preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
